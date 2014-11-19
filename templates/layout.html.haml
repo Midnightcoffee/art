@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% haml %}
+-extends "banner.html.haml"
+
+%html
+%head
+  -block head
+  -assets "js_all"
+    %script src="{{ ASSET_URL }}" type="text/javascript"
+  -assets "css_all"
+    %link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}"
+  %title << {{ title }}
+  %body
+    -block banner
+
+    
+
+
+{% endhaml %}

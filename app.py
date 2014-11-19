@@ -1,13 +1,17 @@
 from flask import Flask, render_template
 from flask.ext.assets import Environment, Bundle
-from hamlish_jinja import HamlishTagExtension
+from jinja2 import Environment as Env
+from hamlish_jinja import HamlishTagExtension, HamlishExtension
 
 
 app = Flask(__name__)
 app.debug = True
 
+
 # add haml
 app.jinja_env.add_extension(HamlishTagExtension)
+app.jinja_env.add_extension(HamlishExtension)
+app.jinja_env.hamlish_enable_div_shortcut = True
 
 # compile assets
 assets = Environment(app)
@@ -23,7 +27,9 @@ assets.register('js_all', js_bundle)
 
 @app.route('/')
 def hello_word():
-    return render_template('index.html.haml')
+    return render_template('index.html.haml',
+            title="Home",
+            banner="DrewsArt")
 
 
 

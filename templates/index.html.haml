@@ -1,13 +1,5 @@
-<!DOCTYPE html>
 {% haml %}
-%html
-%head
-  %title -> Hello world
-  -assets "js_all"
-    %script src="{{ ASSET_URL }}" type="text/javascript"
-  -assets "css_all"
-    %link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}"
-%body
-%div
-  Hello World
+-extends "layout.html.haml"
+
+
 {% endhaml %}
