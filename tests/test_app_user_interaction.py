@@ -26,6 +26,10 @@ class TestApp(unittest.TestCase):
     def test_home_page(self):
         self.assertEqual('Home', self.c.title)
         self.assertEqual('DrewsArt', self.c.find_element_by_id('banner').text)
+        #TODO use db ids
+        self.assertTrue('about' in self.c.find_element_by_id('nav').text)
+        self.assertTrue('about' in self.c.find_element_by_id('fnav').text)
+        self.assertEqual(3, len(self.c.find_elements_by_class_name('cover_art')))
         
 
 if __name__ == '__main__':

@@ -19,21 +19,34 @@ app.jinja_env.hamlish_enable_div_shortcut = True
 assets = Environment(app)
 assets.url = app.static_url_path
 
-css_bundle = Bundle('css/home.css.sass', filters='sass', output='all.css')
+css_bundle = Bundle('css/master.css.sass', filters='sass', output='all.css')
 assets.register('css_all', css_bundle)
 
 js_bundle = Bundle('js/test.js.coffee', filters='coffeescript', output='all.js')
 assets.register('js_all', js_bundle)
 
+#Should be in DB
 
+
+internal_urls = ['index', 'stick', 'abstract', 'flowers', 'custom', 'tour', 'about']
+footer = "NY, New York City 88516, Rich ave P0 234. @2014 DrewsArt.com ALL RIGHTS RESERVED."
+
+#ahhh
+b = "static/images/Cover_"
+cover_art = [0,1,2]
+cover_art = [b + str(x) + ".jpg" for x in cover_art]
 
 @app.route('/')
-def hello_word():
+@app.route('/home')
+@app.route('/index')
+def index():
     return render_template('index.html.haml',
             title="Home",
-            banner="DrewsArt")
-
-
+            banner="DrewsArt",
+            internal_urls=internal_urls,
+            footer=footer,
+            cover_art=cover_art
+            )
 
 if __name__ == '__main__':
     app.run()

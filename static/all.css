@@ -1,17 +1,115 @@
-/* line 1 */
-body {
-  color: steelblue;
-}
-
-/* line 4 */
+/* line 5 */
 #banner {
   background-color: black;
 }
-/* line 6 */
+/* line 7 */
 #banner p {
   color: white;
   font-size: 90px;
   margin: 0px;
   vertical-align: text-bottom;
   padding: 2px 0px 2px 0px;
+}
+
+/* line 14 */
+#nav {
+  height: 35px;
+  font-size: 20px;
+  font-family: Tahoma;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 3px 2px 3px #333333;
+  background-color: grey;
+}
+/* line 22 */
+#nav ul {
+  height: auto;
+  padding: 7px;
+  margin: 0px;
+}
+/* line 26 */
+#nav li {
+  padding: 18px;
+  display: inline;
+}
+/* line 29 */
+#nav a {
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+}
+
+/* line 35 */
+.columns {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  height: 350px;
+}
+
+/* line 41 */
+#left {
+  float: left;
+  width: 33%;
+}
+
+/* line 43 */
+#right {
+  float: left;
+  width: 33%;
+}
+
+/* line 45 */
+#middle {
+  float: left;
+  width: 33%;
+}
+
+/* line 49 */
+.cover_art img {
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+  border-style: inset;
+  border-width: 10px;
+  border-color: black;
+  clear: both;
+}
+
+/* line 58 */
+#fnav {
+  height: 50px;
+  font-size: 12px;
+  font-family: Times;
+  text-align: center;
+  background-color: white;
+  clear: both;
+  height: 50;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+/* line 70 */
+#fnav ul {
+  height: auto;
+  padding: 4px;
+  margin: 1px;
+}
+/* line 74 */
+#fnav li {
+  padding: 18px;
+  display: inline;
+  margin: 1px;
+}
+/* line 78 */
+#fnav a {
+  text-decoration: none;
+  color: black;
+  padding: 6px;
+}
+/* line 82 */
+#fnav p {
+  font-size: 12px;
+  text-align: center;
 }

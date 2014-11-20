@@ -1,6 +1,16 @@
 {% haml %}
 -extends "layout.html.haml"
 
-
-
+-block left:
+  .cover_art
+    %a
+      %img src="{{ cover_art[0] }}"
+-block middle:
+  .cover_art
+    %a
+      %img src="{{ cover_art[1] }}"
+-block right:
+  .cover_art
+    %a
+      %img src="{{ cover_art[2] }}"
 {% endhaml %}

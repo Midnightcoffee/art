@@ -1,0 +1,84 @@
+@mixin column($float, $width)
+  float: $float
+  width: $width
+
+#banner
+  background-color: black
+  p
+    color: white
+    font-size: 90px
+    margin: 0px
+    vertical-align: text-bottom
+    padding: 2px 0px 2px 0px
+
+#nav
+  height: 35px
+  font-size: 20px
+  font-family: Tahoma
+  font-weight: bold
+  text-align: center
+  text-shadow: 3px 2px 3px #333333
+  background-color: grey
+  ul
+    height: auto
+    padding: 7px
+    margin: 0px
+  li
+    padding: 18px
+    display: inline
+  a
+    text-decoration: none
+    color: white
+    padding: 8px
+
+
+.columns
+  padding-top: 200px
+  padding-bottom: 200px
+  text-align: center
+  height: 350px
+
+#left
+  @include column(left, 33%)
+#right
+  @include column(left, 33%)
+#middle
+  @include column(left, 33%)
+
+.cover_art 
+  img
+    height: 300px
+    width: 300px
+    margin: 10px
+    border-style: inset
+    border-width: 10px
+    border-color: black
+    clear: both
+
+#fnav 
+  height: 50px
+  font-size: 12px
+  font-family: Times
+  text-align: center
+  background-color: white
+  clear: both
+  height: 50
+  bottom: 0
+  left: 0
+  position: absolute
+  width: 100%
+  ul
+    height: auto
+    padding: 4px
+    margin: 1px
+  li
+    padding: 18px
+    display: inline
+    margin: 1px
+  a
+    text-decoration: none
+    color: black
+    padding: 6px
+  p
+    font-size: 12px
+    text-align: center

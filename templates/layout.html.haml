@@ -11,8 +11,21 @@
     #banner
       %p
         {{ banner }}
-
-    
-
+    #nav
+      %ul
+        -for url in internal_urls:
+          %li -> %a href="{{ url }}.html.haml" -> {{ url }}
+    .columns
+      #left
+        -block left
+      #middle
+        -block middle
+      #right
+        -block right
+    #fnav
+      %ul
+        -for url in internal_urls:
+          %li -> %a href="{{ url }}.html.haml" -> {{ url }}
+      %p << {{ footer }}
 
 {% endhaml %}
