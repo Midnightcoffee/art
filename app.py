@@ -1,10 +1,12 @@
 from flask import Flask, render_template
 from flask.ext.assets import Environment, Bundle
+from flask.ext.heroku import Heroku
 from jinja2 import Environment as Env
 from hamlish_jinja import HamlishTagExtension, HamlishExtension
 
 
 app = Flask(__name__)
+heroku = Heroku(app)
 app.debug = True
 
 
