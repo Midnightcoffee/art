@@ -7,25 +7,31 @@
       %script src="{{ ASSET_URL }}" type="text/javascript"
     -assets "css_all"
       %link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}"
+    ;TODO replace me once you understand how to use pre-hooks
+    %meta name="author" content="Drew Verlee"
+    %meta name="description" content="Online Art Gallery"
+    %meta name="keywords" content="Art, Gallery, Flowers"
+
   %body
-    #banner
-      %p
-        {{ banner }}
-    #nav
-      %ul
-        -for url in internal_urls:
-          %li -> %a href="{{ url }}.html.haml" -> {{ url }}
-    .columns
-      #left
-        -block left
-      #middle
-        -block middle
-      #right
-        -block right
-    #fnav
-      %ul
-        -for url in internal_urls:
-          %li -> %a href="{{ url }}.html.haml" -> {{ url }}
-      %p << {{ footer }}
+    %header
+      %p#logo -> =logo[0] -> %span -> =logo[1]
+      %nav#hnav
+        %ul
+          -for url in internal_urls:
+            %li -> %a href="{{ url }}.html.haml" -> {{ url }}
+  #columns
+    #left
+      -block left
+    #middle
+      -block middle
+    #right
+      -block right
+
+    %footer
+      %nav#fnav
+        %ul
+          -for url in internal_urls:
+            %li -> %a href="{{ url }}.html.haml" -> {{ url }}
+        %p << {{ footer }}
 
 {% endhaml %}

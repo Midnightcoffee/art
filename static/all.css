@@ -1,18 +1,20 @@
 /* line 5 */
-#banner {
+#logo {
   background-color: black;
-}
-/* line 7 */
-#banner p {
   color: white;
   font-size: 90px;
   margin: 0px;
   vertical-align: text-bottom;
   padding: 2px 0px 2px 0px;
 }
+/* line 12 */
+#logo span {
+  color: red;
+  font-family: Courier;
+}
 
-/* line 14 */
-#nav {
+/* line 17 */
+#hnav {
   height: 35px;
   font-size: 20px;
   font-family: Tahoma;
@@ -21,52 +23,52 @@
   text-shadow: 3px 2px 3px #333333;
   background-color: grey;
 }
-/* line 22 */
-#nav ul {
+/* line 25 */
+#hnav ul {
   height: auto;
   padding: 7px;
   margin: 0px;
 }
-/* line 26 */
-#nav li {
+/* line 29 */
+#hnav li {
   padding: 18px;
   display: inline;
 }
-/* line 29 */
-#nav a {
+/* line 32 */
+#hnav a {
   text-decoration: none;
   color: white;
   padding: 8px;
 }
 
-/* line 35 */
-.columns {
+/* line 38 */
+#columns {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
   height: 350px;
 }
 
-/* line 41 */
+/* line 44 */
 #left {
   float: left;
   width: 33%;
 }
 
-/* line 43 */
+/* line 46 */
 #right {
   float: left;
   width: 33%;
 }
 
-/* line 45 */
+/* line 48 */
 #middle {
   float: left;
   width: 33%;
 }
 
-/* line 49 */
-.cover_art img {
+/* line 51 */
+.cover_art {
   height: 300px;
   width: 300px;
   margin: 10px;
@@ -76,7 +78,7 @@
   clear: both;
 }
 
-/* line 58 */
+/* line 62 */
 #fnav {
   height: 50px;
   font-size: 12px;
@@ -90,25 +92,25 @@
   position: absolute;
   width: 100%;
 }
-/* line 70 */
+/* line 74 */
 #fnav ul {
   height: auto;
   padding: 4px;
   margin: 1px;
 }
-/* line 74 */
+/* line 78 */
 #fnav li {
   padding: 18px;
   display: inline;
   margin: 1px;
 }
-/* line 78 */
+/* line 82 */
 #fnav a {
   text-decoration: none;
   color: black;
   padding: 6px;
 }
-/* line 82 */
+/* line 86 */
 #fnav p {
   font-size: 12px;
   text-align: center;

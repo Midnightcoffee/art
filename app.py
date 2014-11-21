@@ -29,7 +29,7 @@ assets.register('js_all', js_bundle)
 
 
 internal_urls = ['index', 'stick', 'abstract', 'flowers', 'custom', 'tour', 'about']
-footer = "NY, New York City 88516, Rich ave P0 234. @2014 DrewsArt.com ALL RIGHTS RESERVED."
+footer = "NY, New York City 88516, Rich ave P0 234. &copy; 2014 DrewsArt.com ALL RIGHTS RESERVED."
 
 #ahhh
 b = "static/images/Cover_"
@@ -42,7 +42,7 @@ cover_art = [b + str(x) + ".jpg" for x in cover_art]
 def index():
     return render_template('index.html.haml',
             title="Home",
-            banner="DrewsArt",
+            logo=["Drews", "Art"],
             internal_urls=internal_urls,
             footer=footer,
             cover_art=cover_art

@@ -25,11 +25,12 @@ class TestApp(unittest.TestCase):
 
     def test_home_page(self):
         self.assertEqual('Home', self.c.title)
-        self.assertEqual('DrewsArt', self.c.find_element_by_id('banner').text)
+        self.assertEqual('DrewsArt', self.c.find_element_by_id('logo').text)
         #TODO use db ids
-        self.assertTrue('about' in self.c.find_element_by_id('nav').text)
+        self.assertTrue('about' in self.c.find_element_by_tag_name('nav').text)
         self.assertTrue('about' in self.c.find_element_by_id('fnav').text)
         self.assertEqual(3, len(self.c.find_elements_by_class_name('cover_art')))
+        self.assertEqual(3, len(self.c.find_elements_by_tag_name('meta')))
         
 
 if __name__ == '__main__':

@@ -2,15 +2,18 @@
 -extends "layout.html.haml"
 
 -block left:
-  .cover_art
-    %a
-      %img src="{{ cover_art[0] }}"
+  %a
+    %figure
+      %img.cover_art src="{{ cover_art[0] }}"
+    %figcaption << ART
 -block middle:
-  .cover_art
-    %a
-      %img src="{{ cover_art[1] }}"
+  %a
+    %figure
+      %img.cover_art src="{{ cover_art[1] }}"
+    %figcaption << Is
 -block right:
-  .cover_art
-    %a
-      %img src="{{ cover_art[2] }}"
+  %a
+    %figure
+      %img.cover_art src="{{ cover_art[2] }}"
+    %figcaption << Amazing
 {% endhaml %}
