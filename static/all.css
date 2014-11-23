@@ -1,117 +1,135 @@
-/* line 5 */
+/* line 10 */
+#wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  width: 96%;
+  max-width: 1414px;
+}
+
+/* line 16 */
+header {
+  margin-right: 0.625em;
+  margin-left: 0.625em;
+  width: 97.91667%;
+}
+
+/* line 21 */
 .logo {
+  padding-top: 75px;
   background-color: black;
-  color: white;
-  font-size: 90px;
   margin: 0px;
   vertical-align: text-bottom;
   padding: 2px 0px 2px 0px;
+  font-size: 5em;
+  color: white;
+  font-family: Arial, "Lucida Grande", Verdana, sans-serif;
+  text-transform: uppercase;
 }
-/* line 12 */
+/* line 31 */
 .logo span {
   color: red;
-  font-family: Courier;
 }
 
-/* line 17 */
+/* line 35 */
 #hnav {
-  height: 35px;
-  font-size: 20px;
-  font-family: Tahoma;
-  font-weight: bold;
-  text-align: center;
-  text-shadow: 3px 2px 3px #333333;
+  padding-bottom: 25px;
+  padding-right: 1.04167%;
+  padding-left: 1.04167%;
+  width: 97.91667%;
+  border-bottom-color: #bfbfbf;
+  border-bottom-style: double;
+  border-bottom-width: 4px;
   background-color: grey;
 }
-/* line 25 */
+/* line 44 */
 #hnav ul {
-  height: auto;
-  padding: 7px;
   margin: 0px;
 }
-/* line 29 */
-#hnav li {
-  padding: 18px;
-  display: inline;
-}
-/* line 32 */
-#hnav a {
-  text-decoration: none;
-  color: white;
-  padding: 8px;
-}
-
-/* line 38 */
-#columns {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
-  height: 350px;
-}
-
-/* line 44 */
-#left {
-  float: left;
-  width: 33%;
-}
-
 /* line 46 */
-#right {
-  float: left;
-  width: 33%;
+#hnav ul li {
+  display: inline-block;
+  margin-right: 2.65957%;
+}
+/* line 49 */
+#hnav ul li a {
+  height: 42px;
+  line-height: 42px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Arial, "Lucida Grande", Verdana, sans-serif;
+  font-size: 2em;
+  color: white;
 }
 
-/* line 48 */
-#middle {
+/* line 58 */
+#content {
+  width: 97.91667%;
   float: left;
-  width: 33%;
+  margin-right: 0.625em;
+  margin-left: 0.625em;
 }
 
-/* line 51 */
-.cover_art {
-  height: 300px;
-  width: 300px;
-  margin: 10px;
-  border-style: inset;
-  border-width: 10px;
-  border-color: black;
+/* line 64 */
+#row {
+  float: left;
+  width: 33.33333%;
   clear: both;
 }
 
-/* line 62 */
+/* line 71 */
+figure {
+  margin: 0px;
+}
+/* line 73 */
+figure .cover_art {
+  max-width: 1390.672px;
+  max-height: 200%;
+  width: 300%;
+}
+
+/* line 80 */
+footer {
+  margin-right: 0.625em;
+  margin-left: 0.625em;
+  width: 97.91667%;
+}
+
+/* line 86 */
 #fnav {
-  height: 50px;
-  font-size: 12px;
+  padding-top: 30px;
+  padding-right: 1.04167%;
+  padding-left: 1.04167%;
+  width: 97.91667%;
   font-family: Times;
   text-align: center;
-  background-color: white;
   clear: both;
-  height: 50;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  width: 100%;
+  border-top-color: #bfbfbf;
+  border-top-style: double;
+  border-top-width: 4px;
+  clear: both;
 }
-/* line 74 */
+/* line 98 */
 #fnav ul {
+  margin: 0px;
   height: auto;
-  padding: 4px;
-  margin: 1px;
 }
-/* line 78 */
-#fnav li {
+/* line 101 */
+#fnav ul li {
   padding: 18px;
-  display: inline;
-  margin: 1px;
+  display: inline-block;
+  margin-right: 2.65957%;
 }
-/* line 82 */
-#fnav a {
+/* line 105 */
+#fnav ul a {
+  font-family: Arial, "Lucida Grande", Verdana, sans-serif;
   text-decoration: none;
   color: black;
-  padding: 6px;
+  font-size: 1em;
+  font-style: italic;
 }
-/* line 86 */
+/* line 111 */
 #fnav p {
-  font-size: 12px;
+  font-size: 0.7em;
   text-align: center;
+  font-style: italic;
 }
