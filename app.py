@@ -22,6 +22,9 @@ assets.url = app.static_url_path
 css_bundle = Bundle('css/master.css.sass', filters='sass', output='all.css')
 assets.register('css_all', css_bundle)
 
+css_bundle = Bundle('css/flexbox-grid-5.0.0/css/flexboxgrid.min.css', output='flex.css')
+assets.register('css_flex', css_bundle)
+
 js_bundle = Bundle('js/test.js.coffee', filters='coffeescript', output='all.js')
 assets.register('js_all', js_bundle)
 

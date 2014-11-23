@@ -1,38 +1,40 @@
 /* line 10 */
 #wrapper {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
   margin-right: auto;
   margin-left: auto;
   width: 96%;
   max-width: 1414px;
 }
 
-/* line 16 */
+/* line 19 */
 header {
-  margin-right: 0.625em;
-  margin-left: 0.625em;
   width: 97.91667%;
+  margin-left: 1.1%;
+  margin-right: 1.1%;
 }
 
-/* line 21 */
+/* line 24 */
 .logo {
-  padding-top: 75px;
+  padding-top: 4.6875em;
   background-color: black;
-  margin: 0px;
+  margin: 0em;
   vertical-align: text-bottom;
-  padding: 2px 0px 2px 0px;
+  padding: 0.125em 0em 0.125em 0em;
   font-size: 5em;
   color: white;
   font-family: Arial, "Lucida Grande", Verdana, sans-serif;
   text-transform: uppercase;
 }
-/* line 31 */
+/* line 34 */
 .logo span {
   color: red;
 }
 
-/* line 35 */
+/* line 38 */
 #hnav {
-  padding-bottom: 25px;
   padding-right: 1.04167%;
   padding-left: 1.04167%;
   width: 97.91667%;
@@ -41,19 +43,19 @@ header {
   border-bottom-width: 4px;
   background-color: grey;
 }
-/* line 44 */
+/* line 46 */
 #hnav ul {
   margin: 0px;
 }
-/* line 46 */
+/* line 48 */
 #hnav ul li {
   display: inline-block;
   margin-right: 2.65957%;
 }
-/* line 49 */
+/* line 51 */
 #hnav ul li a {
-  height: 42px;
-  line-height: 42px;
+  height: 1.052em;
+  line-height: 1em;
   text-decoration: none;
   text-transform: uppercase;
   font-family: Arial, "Lucida Grande", Verdana, sans-serif;
@@ -61,40 +63,40 @@ header {
   color: white;
 }
 
-/* line 58 */
+/* line 60 */
 #content {
   width: 97.91667%;
   float: left;
-  margin-right: 0.625em;
-  margin-left: 0.625em;
+  margin-left: 1.1%;
+  margin-right: 1.1%;
 }
 
-/* line 64 */
+/* line 66 */
 #row {
   float: left;
   width: 33.33333%;
   clear: both;
 }
 
-/* line 71 */
+/* line 73 */
 figure {
   margin: 0px;
 }
-/* line 73 */
+/* line 75 */
 figure .cover_art {
   max-width: 1390.672px;
   max-height: 200%;
   width: 300%;
 }
 
-/* line 80 */
+/* line 82 */
 footer {
-  margin-right: 0.625em;
-  margin-left: 0.625em;
+  margin-left: 1.1%;
+  margin-right: 1.1%;
   width: 97.91667%;
 }
 
-/* line 86 */
+/* line 88 */
 #fnav {
   padding-top: 30px;
   padding-right: 1.04167%;
@@ -108,18 +110,18 @@ footer {
   border-top-width: 4px;
   clear: both;
 }
-/* line 98 */
+/* line 100 */
 #fnav ul {
   margin: 0px;
   height: auto;
 }
-/* line 101 */
+/* line 103 */
 #fnav ul li {
   padding: 18px;
   display: inline-block;
   margin-right: 2.65957%;
 }
-/* line 105 */
+/* line 107 */
 #fnav ul a {
   font-family: Arial, "Lucida Grande", Verdana, sans-serif;
   text-decoration: none;
@@ -127,7 +129,7 @@ footer {
   font-size: 1em;
   font-style: italic;
 }
-/* line 111 */
+/* line 113 */
 #fnav p {
   font-size: 0.7em;
   text-align: center;
