@@ -91,31 +91,31 @@ header {
   float: left;
   margin-left: 1.1%;
   margin-right: 1.1%;
+  max-height: 100%;
 }
-/* line 85 */
+/* line 86 */
 #content #index figure {
   margin: 0px;
 }
-/* line 87 */
+/* line 88 */
 #content #index figure .cover_art {
-  max-height: 200%;
   max-width: 100%;
 }
 @media only screen and (max-width: 360px) {
-  /* line 87 */
+  /* line 88 */
   #content #index figure .cover_art {
     height: 8.5em;
   }
 }
 
-/* line 94 */
+/* line 95 */
 footer {
   margin-left: 1.1%;
   margin-right: 1.1%;
   width: 97.91667%;
 }
 
-/* line 99 */
+/* line 100 */
 #fnav {
   padding-top: 30px;
   padding-right: 1.04167%;
@@ -130,25 +130,25 @@ footer {
   clear: both;
 }
 @media only screen and (max-width: 360px) {
-  /* line 99 */
+  /* line 100 */
   #fnav {
     display: none;
   }
 }
-/* line 114 */
+/* line 115 */
 #fnav ul {
   margin: 0;
   padding: 0;
   height: auto;
 }
-/* line 118 */
+/* line 119 */
 #fnav ul li {
   padding: 1em 0;
   margin: 0;
   display: inline-block;
   margin-right: 2.65957%;
 }
-/* line 123 */
+/* line 124 */
 #fnav ul a {
   font-family: Arial, "Lucida Grande", Verdana, sans-serif;
   text-decoration: none;
@@ -156,7 +156,7 @@ footer {
   font-size: 0.8em;
   font-style: italic;
 }
-/* line 129 */
+/* line 130 */
 #fnav p {
   font-size: 0.7em;
   text-align: center;
