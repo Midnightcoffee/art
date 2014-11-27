@@ -2,9 +2,10 @@
 -extends "layout.html.haml"
 
 -block row:
-  {% for c in content %}
-    %a
-      %figure
-        %img.cover_art src="{{ c }}"
-  {% endfor %}
+  #index
+    {% for c in content %}
+      %a
+        %figure
+          %img.cover_art src="{{ c }}"
+    {% endfor %}
 {% endhaml %}

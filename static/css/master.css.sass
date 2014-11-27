@@ -1,12 +1,12 @@
 
-// Variables
 
-$mobile: "handheld and (max-width: 330px)"
-
-// MIXINS
+// variables
 
 $width-small: 360px // galaxy note 3
 $width-large: 1200px // desktop
+
+// mixins
+
 @mixin responsive($width) 
   @if $width == wide-screens 
     @media only screen and (max-width: $width-large)
@@ -81,18 +81,15 @@ header
   float: left
   margin-left: 1.1%
   margin-right: 1.1%
-  img
-    max-width: 100%
-    @include responsive(small-screens)
-      height: 8.5em
-
-figure 
-  margin: 0px
-  .cover_art 
-    max-width: 1390.672px
-    max-height: 200%
-    width: 300%
-    //TODO: max-width of image
+  #index
+    figure 
+      margin: 0px
+      .cover_art 
+        max-height: 200%
+        //TODO: max-width of image
+        max-width: 100%
+        @include responsive(small-screens)
+          height: 8.5em
 
 footer
   margin-left: 1.1%
