@@ -33,13 +33,14 @@ assets.register('js_all', js_bundle)
 
 internal_urls = ['index', 'stick', 'abstract', 'flowers', 'custom', 'tour', 'about']
 footer = "NY, New York City 88516, Rich ave P0 234. &copy; 2014 DrewsArt.com ALL RIGHTS RESERVED."
+logo = "Drew'sArt"
 
 #ahhh
 # b = "static/images/Cover_"
 # cover_art = [0,1,2]
 # cover_art = [b + str(x) + ".jpg" for x in cover_art]
 b = 'static/images/cover.png'
-content = [b,b,b,b,b,b]
+content = [b,b,b]
 
 
 @app.route('/')
@@ -49,7 +50,7 @@ def index():
     # TODO pre hooks
     return render_template('index.html.haml',
             title="Home",
-            logo=["Drews", "Art"],
+            logo=logo,
             internal_urls=internal_urls,
             footer=footer,
             content=content

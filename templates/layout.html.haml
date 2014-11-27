@@ -17,7 +17,7 @@
   %body#wrapper
     %header
       ;TODO: replace with img
-      %h1.logo -> =logo[0] -> %span -> =logo[1]
+      %h1.logo << {{logo}}
       %nav#hnav
         %ul
           -for url in internal_urls:
