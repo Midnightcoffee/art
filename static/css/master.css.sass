@@ -4,10 +4,6 @@
 $mobile: "handheld and (max-width: 330px)"
 
 // MIXINS
-@mixin column($float, $width)
-  float: $float
-  width: $width
-  clear: both
 
 $width-small: 360px // galaxy note 3
 $width-large: 1200px // desktop
@@ -85,12 +81,10 @@ header
   float: left
   margin-left: 1.1%
   margin-right: 1.1%
-  @include responsive(small-screens)
-    img
+  img
+    max-width: 100%
+    @include responsive(small-screens)
       height: 8.5em
-
-#row
-  @include column(left, 33.33333%)
 
 figure 
   margin: 0px
@@ -100,14 +94,10 @@ figure
     width: 300%
     //TODO: max-width of image
 
-
 footer
   margin-left: 1.1%
   margin-right: 1.1%
   width: 97.9166667%
-
-
-
 
 #fnav 
   @include responsive(small-screens)
@@ -143,8 +133,5 @@ footer
     font-size: 0.7em
     text-align: center
     font-style: italic
-
-
-
 
 // index
