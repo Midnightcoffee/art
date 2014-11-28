@@ -26,6 +26,6 @@
       %nav#fnav
         %ul
           -for url in internal_urls:
-            %li -> %a.{{url}}-link href="{{ url }}" -> {{ url }}
+            %li -> %a.{{url}}_link href="{{ url }}" -> {{ url }}
       %p.copy_right << {{ copy_right }}
 {% endhaml %}
