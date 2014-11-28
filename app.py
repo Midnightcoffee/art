@@ -84,7 +84,7 @@ table = {'small': '150', 'large': '200'}
 @app.route('/purchase')
 def purchase():
     return render_template('purchase.html.haml',
-            title="purchase",
+            title="Purchase",
             meta=meta,
             logo=logo,
             internal_urls=internal_urls,
