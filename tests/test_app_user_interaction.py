@@ -8,7 +8,7 @@ servers = {
         'local': 'http://127.0.0.1:5000/'
         }
 
-class TestLargeScreen(unittest.TestCase):
+class TestApp(unittest.TestCase):
 
 
     BASE = servers['local']
@@ -26,8 +26,8 @@ class TestLargeScreen(unittest.TestCase):
     def test_layout(self):
         self.c.implicitly_wait(1)
         self.assertEqual("DREW'S ART", self.c.find_element_by_class_name('logo').text)
-        self.assertTrue('about' in self.c.find_element_by_tag_name('nav').text)
-        self.assertTrue('about' in self.c.find_element_by_id('fnav').text)
+        self.assertTrue('about' in self.c.find_element_by_tag_name('nav').text.lower())
+        self.assertTrue('about' in self.c.find_element_by_id('fnav').text.lower())
         self.assertEqual(3, len(self.c.find_elements_by_class_name('cover_art')))
         self.assertEqual(4, len(self.c.find_elements_by_tag_name('meta')))
         self.assertTrue('NY' in self.c.find_element_by_class_name('copy_right'))
