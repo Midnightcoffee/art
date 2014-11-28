@@ -17,7 +17,7 @@
       %nav#hnav
         %ul
           -for url in internal_urls:
-            %li -> %a#="{{url}}" href="{{ url }}" -> {{ url }}
+            %li -> %a.{{url}}-link href="{{ url }}" -> {{ url }}
 
     #content
       -block content
@@ -26,6 +26,6 @@
       %nav#fnav
         %ul
           -for url in internal_urls:
-            %li -> %a href="{{ url }}" -> {{ url }}
+            %li -> %a.{{url}}-link href="{{ url }}" -> {{ url }}
         %p.copy_right << {{ copy_right }}
 {% endhaml %}
