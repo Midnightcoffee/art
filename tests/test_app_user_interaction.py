@@ -23,8 +23,8 @@ class TestApp(unittest.TestCase):
     def tearDown(self):
         self.c.quit()
 
-    def test_layout(self):
-        self.c.implicitly_wait(1)
+    def test_app(self):
+        #test layout
         self.assertEqual("DREW'S ART", self.c.find_element_by_class_name('logo').text)
         self.assertTrue('about' in self.c.find_element_by_tag_name('nav').text.lower())
         self.assertTrue('about' in self.c.find_element_by_id('fnav').text.lower())
@@ -32,9 +32,9 @@ class TestApp(unittest.TestCase):
         self.assertEqual(4, len(self.c.find_elements_by_tag_name('meta')))
         self.assertTrue('NY' in self.c.find_element_by_class_name('copy_right'))
 
-    # def test_index(self):
-    #     self.assertEqual('Home', self.c.title)
-    #     self.assertEqual(3, len(self.c.find_elements_by_class_name('cover_art')))
+        #test index
+        self.assertEqual('Home', self.c.title)
+        self.assertEqual(3, len(self.c.find_elements_by_class_name('cover_art')))
         
 
         
