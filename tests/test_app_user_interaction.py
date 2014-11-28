@@ -32,7 +32,7 @@ class TestApp(unittest.TestCase):
         self.assertEqual(4, len(self.c.find_elements_by_tag_name('meta')))
         self.assertTrue('NY' in self.c.find_element_by_class_name('copy_right').text)
 
-        #test index
+        #test index/home
         self.assertEqual('Home', self.c.title)
         self.assertEqual(3, len(self.c.find_elements_by_class_name('cover_art')))
 

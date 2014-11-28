@@ -36,7 +36,7 @@ meta = {
         'viewport' : 'width=device-width, initial-scale=1.0, minimum-scale=1.0'
         }
 
-internal_urls = ['index', 'abstract', 'flowers','purchase', 'tour', 'about']
+internal_urls = ['home', 'abstract', 'flowers','purchase', 'tour', 'about']
 copy_right = "NY, New York City 88516, Rich ave P0 234. &copy; 2014 DrewsArt.com ALL RIGHTS RESERVED."
 logo = "DREW'S ART"
 
