@@ -8,7 +8,7 @@ servers = {
         'local': 'http://127.0.0.1:5000/'
         }
 
-class TestApp(unittest.TestCase):
+class TestLargeScreen(unittest.TestCase):
 
 
     BASE = servers['local']
@@ -23,14 +23,20 @@ class TestApp(unittest.TestCase):
     def tearDown(self):
         self.c.quit()
 
-    def test_home_page(self):
-        self.assertEqual('Home', self.c.title)
-        self.assertEqual('DrewsArt', self.c.find_element_by_id('logo').text)
-        #TODO use db ids
+    def test_layout(self):
+        self.c.implicitly_wait(1)
+        self.assertEqual("DREW'S ART", self.c.find_element_by_class_name('logo').text)
         self.assertTrue('about' in self.c.find_element_by_tag_name('nav').text)
         self.assertTrue('about' in self.c.find_element_by_id('fnav').text)
         self.assertEqual(3, len(self.c.find_elements_by_class_name('cover_art')))
         self.assertEqual(4, len(self.c.find_elements_by_tag_name('meta')))
+        self.assertTrue('NY' in self.c.find_element_by_class_name('copy_right'))
+
+    # def test_index(self):
+    #     self.assertEqual('Home', self.c.title)
+    #     self.assertEqual(3, len(self.c.find_elements_by_class_name('cover_art')))
+        
+
         
 
 if __name__ == '__main__':

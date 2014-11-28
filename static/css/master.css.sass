@@ -1,5 +1,3 @@
-
-
 // variables
 
 $width-small: 360px // galaxy note 3
@@ -14,6 +12,11 @@ $width-large: 1200px // desktop
   @else if $width == small-screens 
     @media only screen and (max-width: $width-small)
       @content
+
+//globals
+img
+  max-width: 100%
+  max-height: 33%
 
 // layout
 
@@ -81,14 +84,24 @@ header
   float: left
   margin-left: 1.1%
   margin-right: 1.1%
-  #index
+
+  #index_page
     figure 
       margin: 0px
       .cover_art 
-        //TODO: max-width and height of image
-        max-width: 100%
         @include responsive(small-screens)
           height: 8.5em
+
+  #about_page
+    .picture
+      margin: 0 auto
+    .text
+      padding: 1em 
+      
+  #purchase_page
+    .price
+      text-align: center
+      margin: 0 auto
 
 
 footer

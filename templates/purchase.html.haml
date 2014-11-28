@@ -1,0 +1,13 @@
+{% haml %}
+-extends "layout.html.haml"
+-block content:
+  #purchase
+    %img.art src="{{art}}"
+    %p.purchase_info << {{ purchase_info }}
+    %table.price
+      -for size, price in table.items():
+        %tr
+          %td << {{size}}
+          %td << {{price}}
+    %img.art src="{{art}}"
+{% endhaml %}

@@ -8,29 +8,24 @@
       %script src="{{ ASSET_URL }}" type="text/javascript"
     -assets "css_all"
       %link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}"
-    ;TODO: replace me once you understand how to use pre-hooks
-    %meta name="author" content="Drew Verlee"
-    %meta name="description" content="Online Art Gallery"
-    %meta name="keywords" content="Art, Gallery, Flowers"
-    %meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    -for name, content in meta.items():
+      %meta name="{{name}}" content="{{content}}"
 
   %body#wrapper
     %header
-      ;TODO: replace with img
       %h1.logo << {{logo}}
       %nav#hnav
         %ul
           -for url in internal_urls:
-            %li -> %a href="{{ url }}.html.haml" -> {{ url }}
+            %li -> %a href="{{ url }}" -> {{ url }}
 
     #content
-      #row
-        -block row
+      -block content
 
     %footer
       %nav#fnav
         %ul
           -for url in internal_urls:
-            %li -> %a href="{{ url }}.html.haml" -> {{ url }}
-        %p << {{ footer }}
+            %li -> %a href="{{ url }}" -> {{ url }}
+        %p.copy-right << {{ copy_right }}
 {% endhaml %}
