@@ -37,11 +37,23 @@ class TestApp(unittest.TestCase):
         self.assertEqual(3, len(self.c.find_elements_by_class_name('cover_art')))
 
         # test purchase
-        import pdb; pdb.set_trace()
+        self.c.find_element_by_class_name('purchase_link').click()
+
         self.assertEqual('Purchase', self.c.title)
         self.assertTrue(self.c.find_element_by_class_name('art'))
         self.assertTrue('purchasing' in self.c.find_element_by_class_name('purchase_info').text)
         self.assertTrue('small' in self.c.find_element_by_class_name('price').text)
+        self.assertTrue(self.c.find_element_by_class_name('email-link'))
+
+        # test about
+        self.c.find_element_by_class_name('about_link').click()
+
+        self.assertEqual('About', self.c.title)
+        self.assertTrue(self.c.find_element_by_class_name('picture'))
+        self.assertTrue('drew' in self.c.find_element_by_class_name('text').text)
+        self.assertTrue(self.c.find_element_by_class_name('art'))
+
+
 
         
         

@@ -4,10 +4,10 @@
   #purchase_page
     %img.art src="{{art}}"
     %p.purchase_info << {{ purchase_info }}
-    %table.price
-      -for size, price in table.items():
+    %table.purchase_table
+      -for size, price in purchase_table.items():
         %tr
           %td << {{size}}
           %td << {{price}}
-    %img.art src="{{art}}"
+    %img.purchase_art src="{{purchase_art}}" alt="{{alt}}"
 {% endhaml %}

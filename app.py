@@ -3,6 +3,7 @@ from flask.ext.assets import Environment, Bundle
 from flask.ext.heroku import Heroku
 from jinja2 import Environment as Env
 from hamlish_jinja import HamlishTagExtension, HamlishExtension
+from content import *
 
 
 app = Flask(__name__)
@@ -28,70 +29,66 @@ assets.register('css_flex', css_bundle)
 js_bundle = Bundle('js/test.js.coffee', filters='coffeescript', output='all.js')
 assets.register('js_all', js_bundle)
 
-#Should be in DB
-meta = {
-        'author': 'drew verlee',
-        'description' : 'Online Art Gallery',
-        'keywords' : 'Art, Gallery, Flowers, Abstarct',
-        'viewport' : 'width=device-width, initial-scale=1.0, minimum-scale=1.0'
-        }
 
-internal_urls = ['home', 'abstract', 'flowers','purchase', 'tour', 'about']
-copy_right = "NY, New York City 88516, Rich ave P0 234. &copy; 2014 DrewsArt.com ALL RIGHTS RESERVED."
-logo = "DREW'S ART"
 
-images = 'static/images/'
+@app.template_global()
+def head():
+    return render_template('head.html.haml',
+            meta=meta,
+            )
 
-# TODO pre hooks
-b = images + 'cover.png'
-content = [b,b,b]
+@app.template_global()
+def header():
+    return render_template('header.html.haml',
+            logo=logo,
+            internal_urls=internal_urls,
+            )
+
+@app.template_global()
+def footer():
+    return render_template('footer.html.haml',
+            internal_urls=internal_urls,
+            copy_right=copy_right,
+            email_hyper_link=email_hyper_link
+            )
+
 @app.route('/')
 @app.route('/home')
 @app.route('/index')
 def index():
     return render_template('index.html.haml',
             title="Home",
-            meta=meta,
-            logo=logo,
-            internal_urls=internal_urls,
-            copy_right=copy_right,
-            content=content
+            cover_art=cover_art,
+            alt=alt
             )
 
+about_drew='''Artistic mastermind drew Verlee was born in Michigan. Raised and
+taught by wolves. His style has been hailed as revolutionary. A renowned time traveler
+drew had the ability to study under many famous artists'''
 
-text='''Artistic mastermind drew Verlee was born in Michigan. Raised and
-taught by wolves. His style has been hailed as revolutionary.'''
-picture = images + 'drew.png'
-art = images + 'cover.png'
-external_links = { 'Bill', 'url'}
+
+
 @app.route('/about')
 def about():
     return render_template('about.html.haml',
             title="About",
-            meta=meta,
-            logo=logo,
-            internal_urls=internal_urls,
-            copy_right=copy_right,
-            picture=picture,
-            text=text,
-            art=art,
-            external_links=external_links
+            alt=alt,
+            picture_of_drew=picture_of_drew,
+            about_drew=about_drew,
+            external_links=external_links,
+            about_art=about_art,
             )
 
-purchase_info = "info about purchasing art. " * 20
-art = images + 'cover.png'
-table = {'small': '150', 'large': '200'}
+
 @app.route('/purchase')
 def purchase():
     return render_template('purchase.html.haml',
             title="Purchase",
-            meta=meta,
-            logo=logo,
-            internal_urls=internal_urls,
+            alt=alt,
             purchase_info=purchase_info,
             copy_right=copy_right,
-            art=art,
-            table=table
+            purchase_art=purchase_art,
+            purchase_table=purchase_table
             )
 
 if __name__ == '__main__':

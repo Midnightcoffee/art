@@ -2,30 +2,15 @@
 {% haml %}
 %html lang="en"
 
-  %head
+  {{ head() }}
     %title << {{ title }}
-    -assets "js_all"
-      %script src="{{ ASSET_URL }}" type="text/javascript"
-    -assets "css_all"
-      %link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}"
-    -for name, content in meta.items():
-      %meta name="{{name}}" content="{{content}}"
 
   %body#wrapper
-    %header
-      %h1.logo << {{logo}}
-      %nav#hnav
-        %ul
-          -for url in internal_urls:
-            %li -> %a.{{url}}_link href="{{ url }}" -> {{ url }}
+    {{ header() }}
 
     #content
       -block content
 
-    %footer
-      %nav#fnav
-        %ul
-          -for url in internal_urls:
-            %li -> %a.{{url}}_link href="{{ url }}" -> {{ url }}
-      %p.copy_right << {{ copy_right }}
+    {{ footer() }}
+
 {% endhaml %}

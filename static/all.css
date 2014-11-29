@@ -98,35 +98,79 @@ header {
   margin-left: 1.1%;
   margin-right: 1.1%;
 }
-/* line 92 */
+/* line 91 */
+#content #index_page {
+  background-color: lightgrey;
+}
+/* line 93 */
 #content #index_page figure {
   margin: 0px;
 }
+/* line 95 */
+#content #index_page figure .cover_art {
+  max-height: 10em;
+  width: 100%;
+}
 @media only screen and (max-width: 360px) {
-  /* line 94 */
+  /* line 95 */
   #content #index_page figure .cover_art {
     height: 8.5em;
   }
 }
-/* line 99 */
-#content #about_page .picture {
-  margin: 1em auto;
+/* line 101 */
+#content #about_page {
+  padding: 1em 0 0 0;
+  background-color: lightgrey;
+}
+/* line 104 */
+#content #about_page .picture_of_drew {
+  margin: 0 auto;
   display: block;
+  max-width: 30%;
 }
-/* line 103 */
-#content #about_page .text {
+/* line 110 */
+#content #about_page .about_drew {
   padding: 1em;
+  float: left;
+  max-width: 50%;
+  margin: 0 auto;
 }
-/* line 107 */
-#content #purchase_page .price {
+/* line 116 */
+#content #about_page .artests_drew_studied_under {
+  margin: 0 auto;
+  padding: 1em;
+  float: left;
+  max-width: 50%;
+  text-align: center;
+}
+/* line 122 */
+#content #about_page .artests_drew_studied_under li {
+  list-style: none;
+}
+/* line 124 */
+#content #about_page .artests_drew_studied_under li a {
+  text-decoration: none;
+}
+/* line 127 */
+#content #about_page .about_art {
+  max-height: 10em;
+  width: 100%;
+}
+/* line 133 */
+#content #purchase_page .purchase_table {
   margin: 1em auto;
 }
-/* line 109 */
+/* line 135 */
 #content #purchase_page .purchase_info {
   padding: 1em;
 }
+/* line 137 */
+#content #purchase_page .purchase_art {
+  max-height: 10em;
+  width: 100%;
+}
 
-/* line 113 */
+/* line 142 */
 footer {
   margin-left: 1.1%;
   margin-right: 1.1%;
@@ -139,44 +183,44 @@ footer {
   border-top-style: double;
   border-top-width: 4px;
 }
-/* line 125 */
+/* line 154 */
 footer #fnav {
   padding: 1em auto;
   width: 97.91667%;
   text-align: center;
 }
 @media only screen and (max-width: 360px) {
-  /* line 125 */
+  /* line 154 */
   footer #fnav {
     display: none;
   }
 }
-/* line 132 */
+/* line 161 */
 footer #fnav ul {
   margin: 0;
   padding: 0;
   height: auto;
 }
-/* line 136 */
+/* line 165 */
 footer #fnav ul li {
   padding: 1em 0;
   margin: 0;
   display: inline-block;
   margin-right: 2.65957%;
 }
-/* line 141 */
+/* line 170 */
 footer #fnav ul a {
   font-family: Arial, "Lucida Grande", Verdana, sans-serif;
   text-decoration: none;
   font-size: 1em;
   font-style: italic;
 }
-/* line 146 */
-footer p {
+/* line 175 */
+footer .footer_text {
+  display: inline-block;
   font-size: 1em;
-  text-align: center;
   font-style: italic;
-  text-color: white;
+  text-color: black;
   padding-bottom: 1em;
   margin: 0;
 }

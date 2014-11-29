@@ -1,11 +1,13 @@
 {% haml %}
 -extends "layout.html.haml"
+-block title:
+  {{ title }}
 
 -block content:
   #index_page
-    {% for c in content %}
+    {% for art in cover_art %}
       %a
         %figure
-          %img.cover_art src="{{ c }}"
+          %img.cover_art src="{{ art }}" alt="{{alt}}"
     {% endfor %}
 {% endhaml %}

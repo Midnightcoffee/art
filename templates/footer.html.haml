@@ -1,0 +1,7 @@
+%footer
+  %nav#fnav
+    %ul
+      -for url in internal_urls:
+        %li -> %a.{{url}}_link href="{{ url }}" -> {{ url }}
+    .footer_text
+      %p -> {{ copy_right }} -> %a href="mailto:{{ email_hyper_link }}" -> {{ email_hyper_link }}
