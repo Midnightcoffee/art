@@ -89,15 +89,20 @@ header
   margin-right: 1.1%
 
   #index_page
+    background-color: lightgrey
     figure 
       margin: 0px
       .cover_art 
+        max-height: 10em
+        width: 100%
         @include responsive(small-screens)
           height: 8.5em
 
   #about_page
+    padding: 1em 0 0 0
+    background-color: lightgrey
     .picture
-      margin: 1em auto
+      margin: 0 auto
       display: block
 
     // TODO combine these boxes
