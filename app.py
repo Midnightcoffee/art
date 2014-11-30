@@ -1,10 +1,11 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from flask.ext.assets import Environment, Bundle
 from flask.ext.heroku import Heroku
 from jinja2 import Environment as Env
 from hamlish_jinja import HamlishTagExtension, HamlishExtension
 from content import *
 
+#setup app
 
 app = Flask(__name__)
 heroku = Heroku(app)
@@ -19,17 +20,39 @@ app.jinja_env.hamlish_enable_div_shortcut = True
 # compile assets
 assets = Environment(app)
 assets.url = app.static_url_path
+# css
 
 css_bundle = Bundle('css/master.css.sass', filters='sass', output='all.css')
 assets.register('css_all', css_bundle)
 
-css_bundle = Bundle('css/flexbox-grid-5.0.0/css/flexboxgrid.min.css', output='flex.css')
-assets.register('css_flex', css_bundle)
+slick_css = 'slick-1.3.15/slick/slick.css'
+css_bundle = Bundle(slick_css, output='slick.css')
+assets.register('slick_css', css_bundle)
 
 js_bundle = Bundle('js/test.js.coffee', filters='coffeescript', output='all.js')
 assets.register('js_all', js_bundle)
 
+jquery = 'js/jquery-1.11.1.min.js'
+js_bundle = Bundle(jquery, output='jquery.js')
+assets.register('jquery_all', js_bundle)
 
+jquery_migrate = 'js/jquery-migrate-1.2.1.min.js'
+js_bundle = Bundle(jquery_migrate, output='jquery_migrate.js')
+assets.register('jquery_migrate_all', js_bundle)
+
+slick = 'slick-1.3.15/slick/slick.min.js'
+js_bundle = Bundle(slick, output='slick.js')
+assets.register('slick_all', js_bundle)
+
+# # javascript
+
+# js_bundle = Bundle('slick-1.3.15/slick/slick.min.js', output='slick.js')
+# assets.register('js_all', js_bundle)
+
+
+
+# ============ views ==================
+# global views
 
 @app.template_global()
 def head():
@@ -37,12 +60,14 @@ def head():
             meta=meta,
             )
 
+    
 @app.template_global()
 def header():
     return render_template('header.html.haml',
             logo=logo,
             internal_urls=internal_urls,
             )
+
 
 @app.template_global()
 def footer():
@@ -52,6 +77,8 @@ def footer():
             email_hyper_link=email_hyper_link
             )
 
+
+# normal views
 @app.route('/')
 @app.route('/home')
 @app.route('/index')
@@ -61,11 +88,6 @@ def index():
             cover_art=cover_art,
             alt=alt
             )
-
-about_drew='''Artistic mastermind drew Verlee was born in Michigan. Raised and
-taught by wolves. His style has been hailed as revolutionary. A renowned time traveler
-drew had the ability to study under many famous artists'''
-
 
 
 @app.route('/about')
@@ -90,6 +112,16 @@ def purchase():
             purchase_art=purchase_art,
             purchase_table=purchase_table
             )
+
+
+@app.route('/gallery', methods=['GET', 'POST'])
+def gallery():
+    art = gallery_art['stick']
+    if request.method == 'POST':
+        art = gallery_art.get(request.form.get('art_selection'))
+    return render_template('gallery.html.haml',
+            options=gallery_art.keys(),
+            art=art)
 
 if __name__ == '__main__':
     app.run()

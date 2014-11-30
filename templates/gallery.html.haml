@@ -1,0 +1,27 @@
+{% haml %}
+-extends "layout.html.haml"
+-block content:
+  #gallery
+    %script type='text/javascript'
+      $(document).ready(function(){
+        $('.art_pieces').slick({
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        });
+      });
+    %form.gallery_select action="{{ url_for('gallery') }}" method="POST"
+      .gallery_options
+        -for option in options:
+          %p.gallery_option << {{option}}
+      -for option in options:
+        %input.radio_art type="radio" name="art_selection" value="{{ option }}"
+      %input.submit_art type="submit"
+
+
+    .slider
+      .art_pieces
+        -for a in art:
+          .art_piece
+            %img src="{{ a }}" alt="{{alt}}"
+{% endhaml %}
