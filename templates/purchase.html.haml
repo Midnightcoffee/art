@@ -9,5 +9,12 @@
         %tr
           %td << {{size}}
           %td << {{price}}
+    %p.purchase_email_info
+    %form.purchase_email action="mailto:drew.verlee@gmail.com?subject=Order"
+      %input.name type="text" name="name" value="your name" required="required"
+      %input.email type="email" name="email" value="your email" required="required"
+      %input.comment type="text" name="email" value="your order" size="300" required="required"
+      %input type="submit"
+        
     %img.purchase_art src="{{purchase_art}}" alt="{{alt}}"
 {% endhaml %}
