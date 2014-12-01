@@ -84,13 +84,13 @@ header {
   color: white;
 }
 @media only screen and (max-width: 360px) {
-  /* line 71 */
-  #hnav ul li a {
+  /* line 80 */
+  #hnav ul li #purchase_link {
     font-size: 1em;
   }
 }
 
-/* line 84 */
+/* line 86 */
 #content {
   background-color: white;
   width: 97.91667%;
@@ -98,44 +98,44 @@ header {
   margin-left: 1.1%;
   margin-right: 1.1%;
 }
-/* line 91 */
+/* line 93 */
 #content #index_page {
   background-color: lightgrey;
 }
-/* line 93 */
+/* line 95 */
 #content #index_page figure {
   margin: 0px;
 }
-/* line 95 */
+/* line 97 */
 #content #index_page figure .cover_art {
   max-height: 10em;
   width: 100%;
 }
 @media only screen and (max-width: 360px) {
-  /* line 95 */
+  /* line 97 */
   #content #index_page figure .cover_art {
     height: 8.5em;
   }
 }
-/* line 101 */
+/* line 103 */
 #content #about_page {
   padding: 1em 0 0 0;
   background-color: lightgrey;
 }
-/* line 104 */
+/* line 106 */
 #content #about_page .picture_of_drew {
   margin: 0 auto;
   display: block;
   max-width: 30%;
 }
-/* line 110 */
+/* line 112 */
 #content #about_page .about_drew {
   padding: 1em;
   float: left;
   max-width: 50%;
   margin: 0 auto;
 }
-/* line 116 */
+/* line 118 */
 #content #about_page .artests_drew_studied_under {
   margin: 0 auto;
   padding: 1em;
@@ -143,86 +143,86 @@ header {
   max-width: 50%;
   text-align: center;
 }
-/* line 122 */
+/* line 124 */
 #content #about_page .artests_drew_studied_under li {
   list-style: none;
 }
-/* line 124 */
+/* line 126 */
 #content #about_page .artests_drew_studied_under li a {
   text-decoration: none;
 }
-/* line 127 */
+/* line 129 */
 #content #about_page .about_art {
   max-height: 10em;
   width: 100%;
 }
-/* line 133 */
+/* line 135 */
 #content #purchase_page .purchase_table {
   margin: 1em auto;
 }
-/* line 135 */
+/* line 137 */
 #content #purchase_page .purchase_info {
   padding: 1em;
 }
-/* line 137 */
+/* line 139 */
 #content #purchase_page .purhcase_email {
   margin: 1em auto;
 }
-/* line 139 */
+/* line 141 */
 #content #purchase_page .purchase_art {
   max-height: 10em;
   width: 100%;
 }
-/* line 144 */
+/* line 146 */
 #content #tour_page .tour_table {
   margin: 1em auto;
 }
-/* line 146 */
+/* line 148 */
 #content #tour_page .tour_info {
   padding: 1em;
 }
-/* line 148 */
+/* line 150 */
 #content #tour_page .tour_art {
   max-height: 10em;
   width: 100%;
 }
-/* line 153 */
+/* line 155 */
 #content #gallery .gallery_select {
   text-align: center;
   background-color: black;
   padding: 1em 0 0 0;
 }
-/* line 158 */
+/* line 160 */
 #content #gallery .slider {
   background-color: black;
   padding: 4em 2em;
 }
-/* line 161 */
+/* line 163 */
 #content #gallery .slider .art_pieces {
   margin: 1em 2em;
 }
-/* line 163 */
+/* line 165 */
 #content #gallery .slider .art_pieces .art_piece {
   border-style: ridge;
   margin: 0 auto;
   width: 100%;
   display: block;
 }
-/* line 169 */
+/* line 171 */
 #content #gallery .gallery_select .radio_art {
   margin-left: 2em;
   margin-right: 2em;
 }
-/* line 173 */
+/* line 175 */
 #content #gallery .gallery_select .submit_art {
   display: block;
   margin: 1em auto 0 auto;
 }
-/* line 176 */
+/* line 178 */
 #content #gallery .gallery_select .gallery_options {
   color: white;
 }
-/* line 178 */
+/* line 180 */
 #content #gallery .gallery_select .gallery_options .gallery_option {
   display: inline;
   margin-left: 1em;
@@ -230,7 +230,7 @@ header {
   padding: 1em auto;
 }
 
-/* line 184 */
+/* line 186 */
 footer {
   margin-left: 1.1%;
   margin-right: 1.1%;
@@ -243,39 +243,39 @@ footer {
   border-top-style: double;
   border-top-width: 4px;
 }
-/* line 196 */
+/* line 198 */
 footer #fnav {
   padding: 1em auto;
   width: 97.91667%;
   text-align: center;
 }
 @media only screen and (max-width: 360px) {
-  /* line 196 */
+  /* line 198 */
   footer #fnav {
     display: none;
   }
 }
-/* line 203 */
+/* line 205 */
 footer #fnav ul {
   margin: 0;
   padding: 0;
   height: auto;
 }
-/* line 207 */
+/* line 209 */
 footer #fnav ul li {
   padding: 1em 0;
   margin: 0;
   display: inline-block;
   margin-right: 2.65957%;
 }
-/* line 212 */
+/* line 214 */
 footer #fnav ul a {
   font-family: Arial, "Lucida Grande", Verdana, sans-serif;
   text-decoration: none;
   font-size: 1em;
   font-style: italic;
 }
-/* line 217 */
+/* line 219 */
 footer .footer_text {
   display: inline-block;
   font-size: 1em;

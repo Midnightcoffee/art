@@ -1,8 +1,8 @@
 {% haml %}
 -extends "layout.html.haml"
 -block content:
-  #purchase_page
-    %img.art src="{{art}}"
+  #purchase_page 
+    %img.art src="{{art}}" 
     %p.purchase_info << {{ purchase_info }}
     %table.purchase_table
       -for size, price in purchase_table.items():

@@ -3,4 +3,4 @@
   %nav#hnav
     %ul
       -for url in internal_urls:
-        %li -> %a.{{url}}_link href="{{ url }}" -> {{ url }}
+        %li -> %a#{{url}}_link href="{{ url }}" onclick="leave_alert()" -> {{ url }}
