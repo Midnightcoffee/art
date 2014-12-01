@@ -1,0 +1,14 @@
+{% haml %}
+-extends "layout.html.haml"
+-block content:
+  #tour_page
+    %img.art src="{{art}}"
+    %p.tour_info << {{ tour_info }}
+    %table.tour_table
+      -for location, date in tour_table.items():
+        %tr
+          %td << {{location}}
+          %td << {{date}}
+        
+    %img.tour_art src="{{tour_art}}" alt="{{alt}}"
+{% endhaml %}

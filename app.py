@@ -108,9 +108,18 @@ def purchase():
             title="Purchase",
             alt=alt,
             purchase_info=purchase_info,
-            copy_right=copy_right,
             purchase_art=purchase_art,
             purchase_table=purchase_table
+            )
+
+@app.route('/tour')
+def tour():
+    return render_template('tour.html.haml',
+            title="Tour",
+            alt=alt,
+            tour_info=tour_info,
+            tour_art=tour_art,
+            tour_table=tour_table
             )
 
 

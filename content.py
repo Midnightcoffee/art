@@ -6,7 +6,7 @@ meta = {
         'viewport' : 'width=device-width, initial-scale=1.0, minimum-scale=1.0'
         }
 
-internal_urls = ['home', 'gallery', 'about','purchase']
+internal_urls = ['home', 'gallery', 'about','purchase', 'tour']
 copy_right = "NY, New York City 88516, Rich ave P0 234. &copy; 2014 "
 logo = "DREW'S ART"
 
@@ -39,6 +39,11 @@ drew had the ability to study under many famous artists'''
 purchase_art = images + 'Flowers_1.jpg'
 purchase_table = {'small': '150', 'large': '200'}
 purchase_info="Prices vary by something something something..."
+
+# tour page
+tour_art = images + 'Flowers_4.jpg'
+tour_info="Here are some dates and locations where you can come see how amazing I am"
+tour_table = {'Detroit': '4/7/2015', 'Croatia': '4/25/2015', 'Iceland': '5/20/2015'}
 
 # stick art
 
