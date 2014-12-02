@@ -1,5 +1,77 @@
-This is a hello world of demo of flask combined with:
+Webapp for 3750
+==================
 
-- Haml templating for HTML
-- Coffeescript for JS
-- SASS for CSS
+The idea was to extend my knowledge of such technologies as:
+
+* css and sass
+* html and haml
+* javascript
+* flask
+
+And such concepts as:
+
+* responsive design
+* web design
+* responsible design
+
+I have built websites before. But the design was always an after thought. Thus,
+designing the website was a new experience for me.
+
+Things I struggled with:
+
+=======================
+Responsive design
+=================
+it's hard to build a site that does well on multiple 
+screen sizes. I read two books on responsive web design and several posts 
+online on the topic. The conclusion was while you can get far with media
+queries, fluid designs, etc.. the future is something like flexbox by mozzila.
+
+I would use flexbox on a real project, given the right requirements, but
+in this case I just used max-widths, ems, and percentages along with a limited
+media query to do the project.
+
+ids vs class
+=================
+I understand their use but its not obvious to me when 
+to use one vs another at the start.
+
+i didn't overcome this problem.
+
+
+css structure
+=======================
+sometimes a hierarchy isn't important, should i just 
+push things to the left or layer things?
+
+.nav
+
+.link
+
+VS
+
+.nav
+  .link
+
+I end ended up layering in most cases
+
+
+DRY css
+=======================
+I feel like with some slight tweeks i could have half the code.
+But a lot of code shared code doesn't have an obvious parent. TODO
+
+sass helps but i'm sure with more experience i'll get better at this
+
+
+nameing stuff
+=======================
+naming variables is always hard. I think better names 
+comes with better understanding of what your doing and keeping things 
+dry. Example gallery_select, probably should just be 'select' under
+gallery...
+
+
+
+
+
