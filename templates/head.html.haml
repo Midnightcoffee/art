@@ -1,4 +1,7 @@
 %head
+
+  %link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}"
+
   -assets "js_all"
     %script src="{{ ASSET_URL }}" type="text/javascript"
   -assets "jquery_all"
@@ -12,6 +15,8 @@
     %link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}"
   -assets "slick_css"
     %link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}"
+
+  
 
 
   -for name, content in meta.items():
