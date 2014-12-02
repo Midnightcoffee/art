@@ -47,13 +47,17 @@ tour_table = {'Detroit': '4/7/2015', 'Croatia': '4/25/2015', 'Iceland': '5/20/20
 
 # stick art
 
-# better way, read file
+#TODO better way, read file
 stick_art = [images + 'Stick_' + str(x) + '.jpg' for x in range(1,5)]
 flowers_art = [images + 'Flowers_' + str(x) + '.jpg' for x in range(1,5)]
 abstract_art = [images + 'Abstract_' + str(x) + '.jpg' for x in range(1,5)]
+animated_art = ['abstract', 'ball', 'boom', 'heart', 'line']
+animated_art = [images + x + '.gif' for x in animated_art]
+
 
 gallery_art = {
         'stick': stick_art,
         'abstract': abstract_art,
-        'flower': flowers_art
+        'flower': flowers_art,
+        'animated': animated_art,
         }
