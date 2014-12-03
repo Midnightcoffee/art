@@ -1,10 +1,10 @@
-/* line 22 */
+/* line 19 */
 img {
   max-width: 100%;
   max-height: 33%;
 }
 
-/* line 29 */
+/* line 26 */
 #wrapper {
   margin: 2em auto;
   width: 96%;
@@ -12,13 +12,13 @@ img {
   background-image: url("images/background.jpg");
 }
 
-/* line 35 */
+/* line 32 */
 header {
   width: 97.91667%;
   margin: 0 1.1%;
 }
 
-/* line 39 */
+/* line 36 */
 .logo {
   background-color: black;
   margin: 0;
@@ -31,20 +31,20 @@ header {
   text-align: center;
 }
 @media only screen and (max-width: 360px) {
-  /* line 39 */
+  /* line 36 */
   .logo {
     font-size: 2em;
     text-align: center;
   }
 }
 @media print {
-  /* line 39 */
+  /* line 36 */
   .logo {
     font-size: 1em;
   }
 }
 
-/* line 56 */
+/* line 53 */
 #hnav {
   padding: 0 1.04167% 0.1%;
   width: 97.91667%;
@@ -55,39 +55,39 @@ header {
   background-color: grey;
 }
 @media print {
-  /* line 56 */
+  /* line 53 */
   #hnav {
     display: none;
   }
 }
-/* line 67 */
+/* line 64 */
 #hnav ul {
   margin: 0px;
 }
 @media only screen and (max-width: 360px) {
-  /* line 67 */
+  /* line 64 */
   #hnav ul {
     padding: 0;
   }
 }
-/* line 71 */
+/* line 68 */
 #hnav ul li {
   display: inline-block;
   margin-right: 2.65957%;
 }
-/* line 74 */
+/* line 71 */
 #hnav ul li:hover {
   background-color: black;
 }
 @media only screen and (max-width: 360px) {
-  /* line 71 */
+  /* line 68 */
   #hnav ul li {
     display: block;
     margin-right: 1%;
     text-align: center;
   }
 }
-/* line 80 */
+/* line 77 */
 #hnav ul li a {
   height: 1.052em;
   line-height: 1em;
@@ -98,19 +98,19 @@ header {
   color: white;
 }
 @media print {
-  /* line 88 */
+  /* line 85 */
   #hnav ul li a:after {
     content: " (" attr(href) ") ";
   }
 }
 @media only screen and (max-width: 360px) {
-  /* line 80 */
+  /* line 77 */
   #hnav ul li a {
     font-size: 1em;
   }
 }
 
-/* line 100 */
+/* line 97 */
 #content {
   background-color: white;
   width: 97.91667%;
@@ -118,55 +118,55 @@ header {
   margin-left: 1.1%;
   margin-right: 1.1%;
 }
-/* line 107 */
+/* line 104 */
 #content #index_page {
   background-color: lightgrey;
 }
-/* line 109 */
+/* line 106 */
 #content #index_page figure {
   margin: 0px;
 }
-/* line 111 */
+/* line 108 */
 #content #index_page figure .cover_art {
   max-height: 10em;
   width: 100%;
 }
 @media only screen and (max-width: 360px) {
-  /* line 111 */
+  /* line 108 */
   #content #index_page figure .cover_art {
     height: 8.5em;
   }
 }
-/* line 117 */
+/* line 114 */
 #content #about_page {
   padding: 1em 0 0 0;
   background-color: lightgrey;
 }
-/* line 120 */
+/* line 117 */
 #content #about_page .picture_of_drew {
   margin: 0 auto;
   display: block;
   max-width: 30%;
 }
-/* line 126 */
+/* line 123 */
 #content #about_page .about_artist {
   width: 100%;
   overflow: auto;
   margin: 0 4em;
 }
 @media only screen and (max-width: 360px) {
-  /* line 126 */
+  /* line 123 */
   #content #about_page .about_artist {
     margin: 0 2em;
   }
 }
-/* line 133 */
+/* line 130 */
 #content #about_page .about_artist .column_1 {
   float: left;
   width: 30%;
 }
 @media only screen and (max-width: 360px) {
-  /* line 133 */
+  /* line 130 */
   #content #about_page .about_artist .column_1 {
     display: block;
     width: 100%;
@@ -174,17 +174,17 @@ header {
     word-wrap: break-word;
   }
 }
-/* line 141 */
+/* line 138 */
 #content #about_page .about_artist .column_1 .about_drew {
   text-align: center;
 }
-/* line 144 */
+/* line 141 */
 #content #about_page .about_artist .column_2 {
   float: left;
   width: 30%;
 }
 @media only screen and (max-width: 360px) {
-  /* line 144 */
+  /* line 141 */
   #content #about_page .about_artist .column_2 {
     background-color: white;
     display: block;
@@ -193,33 +193,33 @@ header {
     word-wrap: break-word;
   }
 }
-/* line 154 */
+/* line 151 */
 #content #about_page .about_artist .column_2 .artests_drew_studied_under {
   text-align: center;
 }
-/* line 156 */
+/* line 153 */
 #content #about_page .about_artist .column_2 .artests_drew_studied_under li {
   list-style: none;
 }
-/* line 158 */
+/* line 155 */
 #content #about_page .about_artist .column_2 .artests_drew_studied_under li a {
   text-decoration: none;
 }
 @media print {
-  /* line 160 */
+  /* line 157 */
   #content #about_page .about_artist .column_2 .artests_drew_studied_under li a:after {
     font-size: 10px;
     content: " (" attr(href) ") ";
   }
 }
-/* line 165 */
+/* line 162 */
 #content #about_page .about_artist .column_3 {
   float: left;
   width: 30%;
   margin: 0 1em;
 }
 @media only screen and (max-width: 360px) {
-  /* line 165 */
+  /* line 162 */
   #content #about_page .about_artist .column_3 {
     display: block;
     width: 100%;
@@ -227,42 +227,42 @@ header {
     word-wrap: break-word;
   }
 }
-/* line 175 */
+/* line 172 */
 #content #about_page .about_artist .column_3 .amazing_facts_about_drew lu {
   list-style: none;
 }
-/* line 177 */
+/* line 174 */
 #content #about_page .about_artist .column_3 .amazing_facts_about_drew lu a {
   text-decoration: none;
 }
-/* line 179 */
+/* line 176 */
 #content #about_page .about_artist .column_3 .drew_heading {
   text-align: center;
 }
-/* line 184 */
+/* line 181 */
 #content #about_page .about_art {
   max-height: 10em;
   width: 100%;
 }
-/* line 188 */
+/* line 185 */
 #content #review_page {
   background-color: lightgrey;
   word-wrap: break-word;
 }
-/* line 192 */
+/* line 189 */
 #content #review_page .reviews {
   width: 100%;
   overflow: auto;
   margin: 0 2em;
 }
-/* line 196 */
+/* line 193 */
 #content #review_page .reviews .column {
   float: left;
   width: 28%;
   padding: 1em;
 }
 @media only screen and (max-width: 360px) {
-  /* line 196 */
+  /* line 193 */
   #content #review_page .reviews .column {
     display: block;
     width: 100%;
@@ -270,21 +270,22 @@ header {
     word-wrap: break-word;
   }
 }
-/* line 206 */
+/* line 203 */
 #content #review_page .review_art {
   max-height: 10em;
   width: 100%;
 }
-/* line 216 */
+/* line 213 */
 #content #purchase_page .table_box {
   background-color: grey;
   color: white;
 }
-/* line 219 */
+/* line 216 */
 #content #purchase_page .table_box .purchase_table {
   margin: 1em auto;
+  font-size: 1.5em;
 }
-/* line 222 */
+/* line 220 */
 #content #purchase_page .purchase_info {
   padding: 1em;
   max-width: 40%;
@@ -292,77 +293,51 @@ header {
   margin: 0 auto;
 }
 @media only screen and (max-width: 360px) {
-  /* line 222 */
+  /* line 220 */
   #content #purchase_page .purchase_info {
     max-width: 100%;
   }
 }
-/* line 230 */
+/* line 228 */
 #content #purchase_page .purhcase_email {
   margin: 1em auto;
 }
-/* line 232 */
+/* line 230 */
 #content #purchase_page .purchase_art {
   max-height: 10em;
   width: 100%;
 }
-/* line 237 */
+/* line 235 */
 #content #tour_page .tour_table {
   margin: 1em auto;
 }
-/* line 239 */
+/* line 237 */
 #content #tour_page .tour_info {
   padding: 1em;
   text-align: center;
 }
-/* line 243 */
+/* line 241 */
 #content #tour_page .tour_art {
   max-height: 10em;
   width: 100%;
 }
-/* line 248 */
+/* line 246 */
 #content #gallery .gallery_select {
   text-align: center;
   background-color: black;
   padding: 1em 0 0 0;
 }
-/* line 253 */
-#content #gallery .slider {
-  background-color: black;
-  padding: 4em 2em;
-}
-/* line 256 */
-#content #gallery .slider .art_pieces {
-  margin: 1em 2em;
-}
-/* line 258 */
-#content #gallery .slider .art_pieces .art_piece {
-  border-style: ridge;
-  margin: 0 auto;
-  width: 100%;
-  display: block;
-}
-/* line 263 */
-#content #gallery .gallery_option {
-  font-size: 2em;
-}
-@media only screen and (max-width: 360px) {
-  /* line 263 */
-  #content #gallery .gallery_option {
-    font-size: 1em;
-  }
-}
-/* line 268 */
+/* line 250 */
 #content #gallery .gallery_select .radio_art {
   margin: 0.5em 5em;
 }
 @media only screen and (max-width: 360px) {
-  /* line 268 */
+  /* line 250 */
   #content #gallery .gallery_select .radio_art {
     margin: 0 10%;
   }
 }
-/* line 273 */
+/* line 255 */
 #content #gallery .gallery_select .submit_art {
   display: block;
   margin: 1em auto 0 auto;
@@ -371,94 +346,117 @@ header {
   width: 6em;
   height: 2em;
 }
-/* line 280 */
+/* line 262 */
 #content #gallery .gallery_select .gallery_options {
   color: white;
 }
-/* line 282 */
+/* line 264 */
 #content #gallery .gallery_select .gallery_options .gallery_option {
   display: inline;
   margin-left: 1em;
   margin-right: 1em;
-  padding: 1em auto;
+  padding: 1em;
+  font-size: 2em;
+}
+@media only screen and (max-width: 360px) {
+  /* line 264 */
+  #content #gallery .gallery_select .gallery_options .gallery_option {
+    font-size: 1em;
+  }
+}
+/* line 273 */
+#content #gallery .slider {
+  background-color: black;
+  padding: 4em 2em;
+}
+/* line 276 */
+#content #gallery .slider .art_pieces {
+  margin: 1em 2em;
+}
+/* line 278 */
+#content #gallery .slider .art_pieces .art_piece {
+  border-style: ridge;
+  margin: 0 auto;
+  width: 100%;
+  display: block;
 }
 
-/* line 288 */
+/* line 286 */
 footer {
   margin-left: 1.1%;
   margin-right: 1.1%;
   width: 97.91667%;
   clear: both;
   max-height: 20%;
-  text-color: white;
   background-color: grey;
   border-top-color: #bfbfbf;
   border-top-style: double;
   border-top-width: 4px;
+  font-weight: bold;
 }
-/* line 300 */
+/* line 298 */
 footer #fnav {
-  padding: 1em auto;
+  padding: 1em;
   width: 97.91667%;
   text-align: center;
 }
 @media print {
-  /* line 300 */
+  /* line 298 */
   footer #fnav {
     display: none;
   }
 }
 @media only screen and (max-width: 360px) {
-  /* line 300 */
+  /* line 298 */
   footer #fnav {
     display: none;
   }
 }
-/* line 309 */
+/* line 307 */
 footer #fnav ul {
   margin: 0;
   padding: 0;
   height: auto;
 }
-/* line 313 */
+/* line 311 */
 footer #fnav ul li {
   padding: 1em 0;
   margin: 0;
   display: inline-block;
   margin-right: 2.65957%;
 }
-/* line 318 */
+/* line 316 */
 footer #fnav ul a {
   font-family: Arial, "Lucida Grande", Verdana, sans-serif;
   text-decoration: none;
   font-size: 1em;
   font-style: italic;
 }
-/* line 323 */
+/* line 321 */
 footer .footer_text {
   margin: 0 auto;
   display: block;
   font-size: 1em;
   font-style: italic;
-  text-color: black;
+  color: white;
   padding-bottom: 1em;
   margin: 0;
   text-align: center;
   font-style: italic;
 }
 
-/* line 334 */
+/* line 332 */
 .hidden {
   display: none;
 }
 
-/* line 337 */
+/* line 335 */
 .email_box {
   display: inline;
   margin: auto;
   text-align: center;
 }
-/* line 343 */
+/* line 341 */
 .email_box .purchase_form .name {
   width: 20%;
   margin: 0.5em;
@@ -467,7 +465,7 @@ footer .footer_text {
   border-color: #9ecaed;
   border-radius: 3em;
 }
-/* line 350 */
+/* line 348 */
 .email_box .purchase_form .email {
   width: 20%;
   margin: 0.5em;
@@ -476,7 +474,7 @@ footer .footer_text {
   border-color: #9ecaed;
   border-radius: 3em;
 }
-/* line 357 */
+/* line 355 */
 .email_box .purchase_form .subject {
   width: 20%;
   margin: 0.5em;
@@ -485,7 +483,7 @@ footer .footer_text {
   border-color: #9ecaed;
   border-radius: 3em;
 }
-/* line 364 */
+/* line 362 */
 .email_box .purchase_form .body {
   display: block;
   width: 65%;
@@ -496,7 +494,7 @@ footer .footer_text {
   border-color: #9ecaed;
   border-radius: 3em;
 }
-/* line 374 */
+/* line 372 */
 .email_box .purchase_form .submit {
   margin: 0.5em;
   background: #3498db;
@@ -514,7 +512,7 @@ footer .footer_text {
   padding: 10px 20px 10px 20px;
   text-decoration: none;
 }
-/* line 391 */
+/* line 389 */
 .email_box .purchase_form .submit:hover {
   background: #3cb0fd;
   background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);

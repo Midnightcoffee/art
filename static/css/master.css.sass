@@ -15,9 +15,6 @@ $width-large: 1200px // desktop
     @media only screen and (max-width: $width-small)
       @content
 
-
-
-
 //globals
 img
   max-width: 100%
@@ -218,6 +215,7 @@ header
       color: white
       .purchase_table
         margin: 1em auto
+        font-size: 1.5em
 
     .purchase_info
       padding: 1em
@@ -249,22 +247,6 @@ header
       text-align: center
       background-color: black
       padding: 1em 0 0 0 
-      
-    .slider
-      background-color: black
-      padding: 4em 2em
-      .art_pieces
-        margin: 1em 2em
-        .art_piece
-          border-style: ridge
-          margin: 0 auto
-          width: 100%
-          display: block
-    .gallery_option
-      font-size: 2em
-      @include responsive(small-screens)
-        font-size: 1em
-    .gallery_select
       .radio_art
         margin: .5em 5em
         @include responsive(small-screens)
@@ -283,7 +265,23 @@ header
           display: inline
           margin-left: 1em
           margin-right: 1em
-          padding: 1em auto
+          padding: 1em
+          font-size: 2em
+          @include responsive(small-screens)
+            font-size: 1em
+      
+    .slider
+      background-color: black
+      padding: 4em 2em
+      .art_pieces
+        margin: 1em 2em
+        .art_piece
+          border-style: ridge
+          margin: 0 auto
+          width: 100%
+          display: block
+
+
 
 footer
   margin-left: 1.1%
@@ -291,11 +289,11 @@ footer
   width: 97.9166667%
   clear: both
   max-height: 20%
-  text-color: white
   background-color: grey
   border-top-color: #bfbfbf
   border-top-style: double
   border-top-width: 4px
+  font-weight: bold
 
   #fnav 
     @media print
@@ -303,7 +301,7 @@ footer
     @include responsive(small-screens)
       display: none
 
-    padding: 1em auto
+    padding: 1em
     width: 97.9166667% // 940  960
     text-align: center
     ul
@@ -325,7 +323,7 @@ footer
     display: block
     font-size: 1em
     font-style: italic
-    text-color: black
+    color: white
     padding-bottom: 1em
     margin: 0
     text-align: center
