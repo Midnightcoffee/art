@@ -3,8 +3,7 @@
   %link rel="icon" type="image" href="{{ url_for('static', filename='favicon.ico') }}"
 
 
-  %script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
-  %script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"
+
 
   -assets "js_all"
     %script src="{{ ASSET_URL }}" type="text/javascript"
@@ -20,6 +19,9 @@
     %link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}" 
   -assets "slick_css"
     %link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}"
+
+  %script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+  %script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"
 
 
 
