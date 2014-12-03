@@ -256,16 +256,20 @@ header
           display: block
     .gallery_option
       font-size: 2em
+      @include responsive(small-screens)
+        font-size: 1em
     .gallery_select
       .radio_art
         margin: .5em 5em
+        @include responsive(small-screens)
+          margin: 0 10%
         
       .submit_art
         display: block
         margin: 1em auto 0 auto
         border-radius: 2px
         font-weight: bold
-        width: 10%
+        width: 6em
         height: 2em
       .gallery_options
         color: white
