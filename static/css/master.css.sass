@@ -15,6 +15,9 @@ $width-large: 1200px // desktop
     @media only screen and (max-width: $width-small)
       @content
 
+
+
+
 //globals
 img
   max-width: 100%
@@ -45,9 +48,13 @@ header
   @include responsive(small-screens)
     font-size: 2em
     text-align: center
+  @media print
+    font-size: 1em
 
 
 #hnav
+  @media print
+    display: none
   padding: 0 1.0416667% .1% // 10  960
   width: 97.9166667% // 940  960
   border-bottom:
@@ -76,6 +83,9 @@ header
         font-family: Arial, "Lucida Grande", Verdana, sans-serif
         font-size: 2em
         color: white
+        @media print
+          &:after
+          content: " (" attr(href) ") "
 
       #purchase_link
 
@@ -109,26 +119,46 @@ header
       max-width: 30%
 
     // TODO combine these boxes
-    .about_drew
-      padding: 1em 
-      float: left
-      max-width: 50%
-      margin: 0 auto
+    .about_artist
+      width: 100%
+      overflow: auto
+      margin: 0 4em
+      .column_1
+        float: left
+        width: 30%
+        .about_drew
+          text-align:center
+      .column_2
+        float: left
+        width: 30%
+        .artests_drew_studied_under
+          text-align: center
+          li
+            list-style: none
+            a
+              text-decoration: none
+              &:after
+                @media print
+                  font-size: 10px
+                  content: " (" attr(href) ") "
 
-    .artests_drew_studied_under
-      margin: 0 auto
-      padding: 1em 
-      float: left
-      max-width: 50%
-      text-align: center
-      li
-        list-style: none
-        a
-          text-decoration: none
+      .column_3
+        float: left
+        width: 30%
+        margin: 0 1em
+        .amazing_facts_about_drew
+          text-align: center
+          li
+            list-style: none
+            a
+              text-decoration: none
+          
+              
 
     .about_art
       max-height: 10em
       width: 100%
+
 
       
   #purchase_page
@@ -196,6 +226,8 @@ footer
   border-top-width: 4px
 
   #fnav 
+    @media print
+      display: none
     @include responsive(small-screens)
       display: none
 
@@ -291,3 +323,4 @@ footer
         background-image: -o-linear-gradient(top, #3cb0fd, #3498db)
         background-image: linear-gradient(to bottom, #3cb0fd, #3498db)
         text-decoration: none
+

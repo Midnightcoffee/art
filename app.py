@@ -103,6 +103,7 @@ def about():
             about_drew=about_drew,
             external_links=external_links,
             about_art=about_art,
+            drew_facts=drew_facts,
             )
 
 

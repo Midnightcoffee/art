@@ -2,12 +2,22 @@
 -extends "layout.html.haml"
 -block content:
   #about_page
-    %img.picture_of_drew src="{{picture_of_drew}}" alt="{{alt}}"
-    %p.about_drew << {{about_drew}}
-    .artests_drew_studied_under
-      %ul
-        -for artist, url in external_links.items():
-          %li -> %a href="{{ url }}" -> {{ artist }}
-    
-    %img.about_art src="{{about_art}}" alt="{{alt}}"
+    .picture_box
+      %img.picture_of_drew src="{{picture_of_drew}}" alt="{{alt}} : {{picture_of_drew}}"
+    .about_artist
+      .column_1
+        %p.about_drew << {{about_drew}}
+      .column_2
+        .artests_drew_studied_under
+          %ul
+            -for artist, url in external_links.items():
+              %li -> %a.artist_links href="{{url}}" -> {{artist}}
+      .column_3
+        .amazing_facts_about_drew
+          %ul.fact_list
+            -for fact in drew_facts:
+              %li.fact << {{fact}}
+      
+  
+    %img.about_art src="{{about_art}}" alt="{{alt}} : {{about_art}}"
 {% endhaml %}

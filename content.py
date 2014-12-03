@@ -35,6 +35,13 @@ about_drew='''Artistic mastermind drew Verlee was born in Michigan. Raised and
 taught by wolves. His style has been hailed as revolutionary. A renowned time traveler
 drew had the ability to study under many famous artists'''
 
+drew_facts = [
+    'The flue gets drew shots',
+    'Drew is the reason why Waldo is hiding',
+    'Death once had a near-drew experience',
+    'Drew makes onions cry'
+    ]
+
 # purchase
 purchase_art = images + 'Flowers_1.jpg'
 purchase_table = {'small': '150', 'large': '200'}
