@@ -30,4 +30,11 @@ app.config([
 ]
 
 
+$(document).ready ->
+  $(".art_pieces").slick
+    infinite: true
+    slidesToShow: 2
+    slidesToScroll: 2
+
+
 

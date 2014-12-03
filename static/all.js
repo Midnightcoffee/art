@@ -42,3 +42,11 @@ app.config([
     };
   }
 ]);
+
+$(document).ready(function() {
+  return $(".art_pieces").slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 2
+  });
+});
