@@ -19,7 +19,7 @@ alt = 'art piece'
 cover_art = ['Abstract_4.jpg', 'Flowers_2.jpg', 'Stick_1.jpg']
 cover_art = [images + a for a in cover_art]
 external_links = {
-        'Michael Whelan' : 'www.michaelwhelan.com/',
+        'Michael Whelan' : 'http://www.michaelwhelan.com/',
         'pablo picasso'  : 'http://en.wikipedia.org/wiki/Pablo_Picasso',
         'Lenonardo da vinci' : 'http://en.wikipedia.org/wiki/Leonardo_da_Vinci',
         'Vincent van Gogh' : 'http://en.wikipedia.org/wiki/Vincent_van_Gogh',
