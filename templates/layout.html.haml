@@ -2,8 +2,9 @@
 {% haml %}
 %html lang="en" ng-app="myApp"
 
-  {{ head() }}
-
+  %head
+    %title << {{title}}
+    {{ head() }}
 
   %body#wrapper onload="come_alert()"
     {{ header() }}

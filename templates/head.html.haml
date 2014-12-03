@@ -1,26 +1,23 @@
-%head
 
-  %title << {{ title }}
+%link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}"
 
-  %link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}"
+%script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+%script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"
 
-  %script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
-  %script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"
+-assets "js_all"
+  %script src="{{ ASSET_URL }}" type="text/javascript"
 
-  -assets "js_all"
-    %script src="{{ ASSET_URL }}" type="text/javascript"
+-assets "jquery_all"
+  %script src="{{ ASSET_URL }}" type="text/javascript"
+-assets "jquery_migrate_all"
+  %script src="{{ ASSET_URL }}" type="text/javascript"
+-assets "slick_all"
+  %script src="{{ ASSET_URL }}" type="text/javascript"
 
-  -assets "jquery_all"
-    %script src="{{ ASSET_URL }}" type="text/javascript"
-  -assets "jquery_migrate_all"
-    %script src="{{ ASSET_URL }}" type="text/javascript"
-  -assets "slick_all"
-    %script src="{{ ASSET_URL }}" type="text/javascript"
+-assets "css_all"
+  %link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}" 
+-assets "slick_css"
+  %link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}"
 
-  -assets "css_all"
-    %link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}" 
-  -assets "slick_css"
-    %link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}"
-
-  -for name, content in meta.items():
-    %meta name="{{name}}" content="{{content}}"
+-for name, content in meta.items():
+  %meta name="{{name}}" content="{{content}}"
