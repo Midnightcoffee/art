@@ -1,4 +1,3 @@
-{% haml %}
 -extends "layout.html.haml"
 -block content:
   #gallery
@@ -15,4 +14,3 @@
         -for a in art:
           .art_piece
             %img src="{{ a }}" alt="{{alt}} : {{a}}"
-{% endhaml %}
