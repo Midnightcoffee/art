@@ -1,25 +1,8 @@
 {% haml %}
 -extends "layout.html.haml"
 -block content:
-  #purchase_page ng-app="myApp"
-    %script
-      var app = angular.
-        module('myApp', []);
-          app.config(['$interpolateProvider', function($interpolateProvider) {
-            $interpolateProvider.startSymbol('{[');
-            $interpolateProvider.endSymbol(']}');
-          }]).
-        controller('EmailController', ['$scope', function($scope) { 
-          $scope.name = "your name";
-          $scope.email = "your email";
-          $scope.subject = "your subject";
-          $scope.body = "enter your order here!";
-          $scope.sendEmail = function() {
-            window.location = "mailto:drew.verlee@gmail.com?subject=" 
-            + $scope.subject + "&body=" + "Email: " + $scope.email + " -- name: " +
-            $scope.name + " -- message: " + $scope.body;
-          };
-        }]);
+  #purchase_page
+
 
     %p.purchase_info << {{ purchase_info }}
     .table_box

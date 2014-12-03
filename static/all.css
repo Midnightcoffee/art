@@ -28,6 +28,7 @@ header {
   color: white;
   font-family: Arial, "Lucida Grande", Verdana, sans-serif;
   text-transform: uppercase;
+  text-align: center;
 }
 @media only screen and (max-width: 360px) {
   /* line 39 */
@@ -43,49 +44,50 @@ header {
   }
 }
 
-/* line 55 */
+/* line 56 */
 #hnav {
   padding: 0 1.04167% 0.1%;
   width: 97.91667%;
+  text-align: center;
   border-bottom-color: #bfbfbf;
   border-bottom-style: double;
   border-bottom-width: 4px;
   background-color: grey;
 }
 @media print {
-  /* line 55 */
+  /* line 56 */
   #hnav {
     display: none;
   }
 }
-/* line 65 */
+/* line 67 */
 #hnav ul {
   margin: 0px;
 }
 @media only screen and (max-width: 360px) {
-  /* line 65 */
+  /* line 67 */
   #hnav ul {
     padding: 0;
   }
 }
-/* line 69 */
+/* line 71 */
 #hnav ul li {
   display: inline-block;
   margin-right: 2.65957%;
 }
-/* line 72 */
+/* line 74 */
 #hnav ul li:hover {
   background-color: black;
 }
 @media only screen and (max-width: 360px) {
-  /* line 69 */
+  /* line 71 */
   #hnav ul li {
     display: block;
     margin-right: 1%;
     text-align: center;
   }
 }
-/* line 78 */
+/* line 80 */
 #hnav ul li a {
   height: 1.052em;
   line-height: 1em;
@@ -96,19 +98,19 @@ header {
   color: white;
 }
 @media print {
-  /* line 86 */
+  /* line 88 */
   #hnav ul li a:after {
     content: " (" attr(href) ") ";
   }
 }
 @media only screen and (max-width: 360px) {
-  /* line 78 */
+  /* line 80 */
   #hnav ul li a {
     font-size: 1em;
   }
 }
 
-/* line 98 */
+/* line 100 */
 #content {
   background-color: white;
   width: 97.91667%;
@@ -116,55 +118,55 @@ header {
   margin-left: 1.1%;
   margin-right: 1.1%;
 }
-/* line 105 */
+/* line 107 */
 #content #index_page {
   background-color: lightgrey;
 }
-/* line 107 */
+/* line 109 */
 #content #index_page figure {
   margin: 0px;
 }
-/* line 109 */
+/* line 111 */
 #content #index_page figure .cover_art {
   max-height: 10em;
   width: 100%;
 }
 @media only screen and (max-width: 360px) {
-  /* line 109 */
+  /* line 111 */
   #content #index_page figure .cover_art {
     height: 8.5em;
   }
 }
-/* line 115 */
+/* line 117 */
 #content #about_page {
   padding: 1em 0 0 0;
   background-color: lightgrey;
 }
-/* line 118 */
+/* line 120 */
 #content #about_page .picture_of_drew {
   margin: 0 auto;
   display: block;
   max-width: 30%;
 }
-/* line 124 */
+/* line 126 */
 #content #about_page .about_artist {
   width: 100%;
   overflow: auto;
   margin: 0 4em;
 }
 @media only screen and (max-width: 360px) {
-  /* line 124 */
+  /* line 126 */
   #content #about_page .about_artist {
     margin: 0 2em;
   }
 }
-/* line 131 */
+/* line 133 */
 #content #about_page .about_artist .column_1 {
   float: left;
   width: 30%;
 }
 @media only screen and (max-width: 360px) {
-  /* line 131 */
+  /* line 133 */
   #content #about_page .about_artist .column_1 {
     display: block;
     width: 100%;
@@ -172,17 +174,17 @@ header {
     word-wrap: break-word;
   }
 }
-/* line 139 */
+/* line 141 */
 #content #about_page .about_artist .column_1 .about_drew {
   text-align: center;
 }
-/* line 142 */
+/* line 144 */
 #content #about_page .about_artist .column_2 {
   float: left;
   width: 30%;
 }
 @media only screen and (max-width: 360px) {
-  /* line 142 */
+  /* line 144 */
   #content #about_page .about_artist .column_2 {
     background-color: white;
     display: block;
@@ -191,33 +193,33 @@ header {
     word-wrap: break-word;
   }
 }
-/* line 152 */
+/* line 154 */
 #content #about_page .about_artist .column_2 .artests_drew_studied_under {
   text-align: center;
 }
-/* line 154 */
+/* line 156 */
 #content #about_page .about_artist .column_2 .artests_drew_studied_under li {
   list-style: none;
 }
-/* line 156 */
+/* line 158 */
 #content #about_page .about_artist .column_2 .artests_drew_studied_under li a {
   text-decoration: none;
 }
 @media print {
-  /* line 158 */
+  /* line 160 */
   #content #about_page .about_artist .column_2 .artests_drew_studied_under li a:after {
     font-size: 10px;
     content: " (" attr(href) ") ";
   }
 }
-/* line 163 */
+/* line 165 */
 #content #about_page .about_artist .column_3 {
   float: left;
   width: 30%;
   margin: 0 1em;
 }
 @media only screen and (max-width: 360px) {
-  /* line 163 */
+  /* line 165 */
   #content #about_page .about_artist .column_3 {
     display: block;
     width: 100%;
@@ -225,38 +227,38 @@ header {
     word-wrap: break-word;
   }
 }
-/* line 173 */
+/* line 175 */
 #content #about_page .about_artist .column_3 .amazing_facts_about_drew lu {
   list-style: none;
 }
-/* line 175 */
+/* line 177 */
 #content #about_page .about_artist .column_3 .amazing_facts_about_drew lu a {
   text-decoration: none;
 }
-/* line 180 */
+/* line 182 */
 #content #about_page .about_art {
   max-height: 10em;
   width: 100%;
 }
-/* line 184 */
+/* line 186 */
 #content #review_page {
   background-color: lightgrey;
   word-wrap: break-word;
 }
-/* line 188 */
+/* line 190 */
 #content #review_page .reviews {
   width: 100%;
   overflow: auto;
   margin: 0 2em;
 }
-/* line 192 */
+/* line 194 */
 #content #review_page .reviews .column {
   float: left;
   width: 28%;
   padding: 1em;
 }
 @media only screen and (max-width: 360px) {
-  /* line 192 */
+  /* line 194 */
   #content #review_page .reviews .column {
     display: block;
     width: 100%;
@@ -264,87 +266,87 @@ header {
     word-wrap: break-word;
   }
 }
-/* line 202 */
+/* line 204 */
 #content #review_page .review_art {
   max-height: 10em;
   width: 100%;
 }
-/* line 212 */
+/* line 214 */
 #content #purchase_page .table_box {
   background-color: grey;
   color: white;
 }
-/* line 215 */
+/* line 217 */
 #content #purchase_page .table_box .purchase_table {
   margin: 1em auto;
 }
-/* line 218 */
+/* line 220 */
 #content #purchase_page .purchase_info {
   padding: 1em;
   max-width: 40%;
   text-align: center;
   margin: 0 auto;
 }
-/* line 223 */
+/* line 225 */
 #content #purchase_page .purhcase_email {
   margin: 1em auto;
 }
-/* line 225 */
+/* line 227 */
 #content #purchase_page .purchase_art {
   max-height: 10em;
   width: 100%;
 }
-/* line 230 */
+/* line 232 */
 #content #tour_page .tour_table {
   margin: 1em auto;
 }
-/* line 232 */
+/* line 234 */
 #content #tour_page .tour_info {
   padding: 1em;
   text-align: center;
 }
-/* line 235 */
+/* line 237 */
 #content #tour_page .tour_art {
   max-height: 10em;
   width: 100%;
 }
-/* line 240 */
+/* line 242 */
 #content #gallery .gallery_select {
   text-align: center;
   background-color: black;
   padding: 1em 0 0 0;
 }
-/* line 245 */
+/* line 247 */
 #content #gallery .slider {
   background-color: black;
   padding: 4em 2em;
 }
-/* line 248 */
+/* line 250 */
 #content #gallery .slider .art_pieces {
   margin: 1em 2em;
 }
-/* line 250 */
+/* line 252 */
 #content #gallery .slider .art_pieces .art_piece {
   border-style: ridge;
   margin: 0 auto;
   width: 100%;
   display: block;
 }
-/* line 256 */
+/* line 258 */
 #content #gallery .gallery_select .radio_art {
   margin-left: 2em;
   margin-right: 2em;
 }
-/* line 260 */
+/* line 262 */
 #content #gallery .gallery_select .submit_art {
   display: block;
   margin: 1em auto 0 auto;
 }
-/* line 263 */
+/* line 265 */
 #content #gallery .gallery_select .gallery_options {
   color: white;
 }
-/* line 265 */
+/* line 267 */
 #content #gallery .gallery_select .gallery_options .gallery_option {
   display: inline;
   margin-left: 1em;
@@ -352,7 +354,7 @@ header {
   padding: 1em auto;
 }
 
-/* line 271 */
+/* line 273 */
 footer {
   margin-left: 1.1%;
   margin-right: 1.1%;
@@ -365,45 +367,45 @@ footer {
   border-top-style: double;
   border-top-width: 4px;
 }
-/* line 283 */
+/* line 285 */
 footer #fnav {
   padding: 1em auto;
   width: 97.91667%;
   text-align: center;
 }
 @media print {
-  /* line 283 */
+  /* line 285 */
   footer #fnav {
     display: none;
   }
 }
 @media only screen and (max-width: 360px) {
-  /* line 283 */
+  /* line 285 */
   footer #fnav {
     display: none;
   }
 }
-/* line 292 */
+/* line 294 */
 footer #fnav ul {
   margin: 0;
   padding: 0;
   height: auto;
 }
-/* line 296 */
+/* line 298 */
 footer #fnav ul li {
   padding: 1em 0;
   margin: 0;
   display: inline-block;
   margin-right: 2.65957%;
 }
-/* line 301 */
+/* line 303 */
 footer #fnav ul a {
   font-family: Arial, "Lucida Grande", Verdana, sans-serif;
   text-decoration: none;
   font-size: 1em;
   font-style: italic;
 }
-/* line 306 */
+/* line 308 */
 footer .footer_text {
   margin: 0 auto;
   display: block;
@@ -416,18 +418,18 @@ footer .footer_text {
   font-style: italic;
 }
 
-/* line 317 */
+/* line 319 */
 .hidden {
   display: none;
 }
 
-/* line 320 */
+/* line 322 */
 .email_box {
   display: inline;
   margin: auto;
   text-align: center;
 }
-/* line 326 */
+/* line 328 */
 .email_box .purchase_form .name {
   width: 20%;
   margin: 0.5em;
@@ -436,7 +438,7 @@ footer .footer_text {
   border-color: #9ecaed;
   border-radius: 3em;
 }
-/* line 333 */
+/* line 335 */
 .email_box .purchase_form .email {
   width: 20%;
   margin: 0.5em;
@@ -445,7 +447,7 @@ footer .footer_text {
   border-color: #9ecaed;
   border-radius: 3em;
 }
-/* line 340 */
+/* line 342 */
 .email_box .purchase_form .subject {
   width: 20%;
   margin: 0.5em;
@@ -454,7 +456,7 @@ footer .footer_text {
   border-color: #9ecaed;
   border-radius: 3em;
 }
-/* line 347 */
+/* line 349 */
 .email_box .purchase_form .body {
   display: block;
   width: 65%;
@@ -465,7 +467,7 @@ footer .footer_text {
   border-color: #9ecaed;
   border-radius: 3em;
 }
-/* line 357 */
+/* line 359 */
 .email_box .purchase_form .submit {
   margin: 0.5em;
   background: #3498db;
@@ -483,7 +485,7 @@ footer .footer_text {
   padding: 10px 20px 10px 20px;
   text-decoration: none;
 }
-/* line 374 */
+/* line 376 */
 .email_box .purchase_form .submit:hover {
   background: #3cb0fd;
   background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);

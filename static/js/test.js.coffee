@@ -12,7 +12,22 @@ come_alert =() ->
   uri = document.documentURI
   if uri.search('purchase') != -1 then coming()
 
-
+app = angular.module("myApp", [])
+app.config([
+  "$interpolateProvider"
+  ($interpolateProvider) ->
+    $interpolateProvider.startSymbol "{["
+    $interpolateProvider.endSymbol "]}"
+]).controller "EmailController", [
+  "$scope"
+  ($scope) ->
+    $scope.name = "your name"
+    $scope.email = "your email"
+    $scope.subject = "your subject"
+    $scope.body = "enter your order here!"
+    $scope.sendEmail = ->
+      window.location = "mailto:drew.verlee@gmail.com?subject=" + $scope.subject + "&body=" + "Email: " + $scope.email + " -- name: " + $scope.name + " -- message: " + $scope.body
+]
 
 
 

@@ -1,4 +1,4 @@
-var come_alert, coming, going, leave_alert;
+var app, come_alert, coming, going, leave_alert;
 
 coming = function() {
   return alert("Please buy something");
@@ -23,3 +23,22 @@ come_alert = function() {
     return coming();
   }
 };
+
+app = angular.module("myApp", []);
+
+app.config([
+  "$interpolateProvider", function($interpolateProvider) {
+    $interpolateProvider.startSymbol("{[");
+    return $interpolateProvider.endSymbol("]}");
+  }
+]).controller("EmailController", [
+  "$scope", function($scope) {
+    $scope.name = "your name";
+    $scope.email = "your email";
+    $scope.subject = "your subject";
+    $scope.body = "enter your order here!";
+    return $scope.sendEmail = function() {
+      return window.location = "mailto:drew.verlee@gmail.com?subject=" + $scope.subject + "&body=" + "Email: " + $scope.email + " -- name: " + $scope.name + " -- message: " + $scope.body;
+    };
+  }
+]);
