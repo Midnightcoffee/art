@@ -331,26 +331,29 @@ footer #fnav ul a {
 }
 /* line 251 */
 footer .footer_text {
-  display: inline-block;
+  margin: 0 auto;
+  display: block;
   font-size: 1em;
   font-style: italic;
   text-color: black;
   padding-bottom: 1em;
   margin: 0;
+  text-align: center;
+  font-style: italic;
 }
 
-/* line 259 */
+/* line 262 */
 .hidden {
   display: none;
 }
 
-/* line 264 */
+/* line 267 */
 .email_box {
   display: inline;
   margin: auto;
   text-align: center;
 }
-/* line 270 */
+/* line 273 */
 .email_box .purchase_form .name {
   width: 20%;
   margin: 0.5em;
@@ -359,7 +362,7 @@ footer .footer_text {
   border-color: #9ecaed;
   border-radius: 3em;
 }
-/* line 277 */
+/* line 280 */
 .email_box .purchase_form .email {
   width: 20%;
   margin: 0.5em;
@@ -368,7 +371,7 @@ footer .footer_text {
   border-color: #9ecaed;
   border-radius: 3em;
 }
-/* line 284 */
+/* line 287 */
 .email_box .purchase_form .subject {
   width: 20%;
   margin: 0.5em;
@@ -377,7 +380,7 @@ footer .footer_text {
   border-color: #9ecaed;
   border-radius: 3em;
 }
-/* line 291 */
+/* line 294 */
 .email_box .purchase_form .body {
   display: block;
   width: 65%;
@@ -388,7 +391,7 @@ footer .footer_text {
   border-color: #9ecaed;
   border-radius: 3em;
 }
-/* line 301 */
+/* line 304 */
 .email_box .purchase_form .submit {
   margin: 0.5em;
   background: #3498db;
@@ -406,7 +409,7 @@ footer .footer_text {
   padding: 10px 20px 10px 20px;
   text-decoration: none;
 }
-/* line 318 */
+/* line 321 */
 .email_box .purchase_form .submit:hover {
   background: #3cb0fd;
   background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
