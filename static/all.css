@@ -284,3 +284,8 @@ footer .footer_text {
   padding-bottom: 1em;
   margin: 0;
 }
+
+/* line 227 */
+.hidden {
+  display: none;
+}

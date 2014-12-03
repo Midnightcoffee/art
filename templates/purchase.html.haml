@@ -1,7 +1,26 @@
 {% haml %}
 -extends "layout.html.haml"
 -block content:
-  #purchase_page 
+  #purchase_page ng-app="myApp"
+    %script
+      var app = angular.
+        module('myApp', []);
+          app.config(['$interpolateProvider', function($interpolateProvider) {
+            $interpolateProvider.startSymbol('{[');
+            $interpolateProvider.endSymbol(']}');
+          }]).
+        controller('EmailController', ['$scope', function($scope) { 
+          $scope.name = "your name";
+          $scope.email = "your email";
+          $scope.subject = "your subject";
+          $scope.body = "enter your email here";
+          $scope.sendEmail = function() {
+            window.location = "mailto:drew.verlee@gmail.com?subject=" 
+            + $scope.subject + "&body=" + "Email: " + $scope.email + " -- name: " +
+            $scope.name + " -- message: " + $scope.body;
+          };
+        }]);
+
     %img.art src="{{art}}" 
     %p.purchase_info << {{ purchase_info }}
     %table.purchase_table
@@ -10,11 +29,14 @@
           %td << {{size}}
           %td << {{price}}
     %p.purchase_email_info
-    %form.purchase_email action="mailto:drew.verlee@gmail.com?subject=Order"
-      %input.name type="text" name="name" value="your name" required="required"
-      %input.email type="email" name="email" value="your email" required="required"
-      %input.comment type="text" name="email" value="your order" size="300" required="required"
-      %input type="submit"
+    .email
+      %form.purchase_form ng-controller="EmailController" ng-submit="sendEmail()"
+        %lable -> your name -> %input.name type="text"  required="required" ng-model="name"
+        %lable -> your email -> %input.email type="email" required="required" ng-model="email"
+        %lable -> subject -> %input.subject type="text" required="required" ng-model="subject"
+        %lable -> what would you like to order -> %input.body type="text" required="required" size="300"  ng-model="body"
+        %input type="submit"
+
         
     %img.purchase_art src="{{purchase_art}}" alt="{{alt}}"
 {% endhaml %}

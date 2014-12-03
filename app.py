@@ -1,13 +1,15 @@
 from flask import Flask, render_template, request
 from flask.ext.assets import Environment, Bundle
 from flask.ext.heroku import Heroku
+from flask.ext.triangle import Triangle
 from jinja2 import Environment as Env
 from hamlish_jinja import HamlishTagExtension, HamlishExtension
 from content import *
 
 #setup app
 
-app = Flask(__name__)
+app = Flask(__name__, static_path='/static')
+Triangle(app)
 heroku = Heroku(app)
 app.debug = True
 
@@ -22,6 +24,7 @@ assets = Environment(app)
 assets.url = app.static_url_path
 # css
 
+#TODO: this isn't how to use assets, investigate when time
 css_bundle = Bundle('css/master.css.sass', filters='sass', output='all.css')
 assets.register('css_all', css_bundle)
 
@@ -44,10 +47,11 @@ slick = 'slick-1.3.15/slick/slick.min.js'
 js_bundle = Bundle(slick, output='slick.js')
 assets.register('slick_all', js_bundle)
 
-# # javascript
+angular = 'angular.min.js'
+js_bundle = Bundle(angular, output='angular.js')
+assets.register('angular_all', js_bundle)
 
-# js_bundle = Bundle('slick-1.3.15/slick/slick.min.js', output='slick.js')
-# assets.register('js_all', js_bundle)
+# # javascript
 
 
 
@@ -109,7 +113,7 @@ def purchase():
             alt=alt,
             purchase_info=purchase_info,
             purchase_art=purchase_art,
-            purchase_table=purchase_table
+            purchase_table=purchase_table,
             )
 
 @app.route('/tour')
