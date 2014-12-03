@@ -13,7 +13,7 @@
           $scope.name = "your name";
           $scope.email = "your email";
           $scope.subject = "your subject";
-          $scope.body = "enter your email here";
+          $scope.body = "enter your message here";
           $scope.sendEmail = function() {
             window.location = "mailto:drew.verlee@gmail.com?subject=" 
             + $scope.subject + "&body=" + "Email: " + $scope.email + " -- name: " +
@@ -28,14 +28,16 @@
         %tr
           %td << {{size}}
           %td << {{price}}
-    %p.purchase_email_info
-    .email
+
+
+    .email_box
+      %h2.email_heading << {{ email_form_heading }}
       %form.purchase_form ng-controller="EmailController" ng-submit="sendEmail()"
-        %lable -> your name -> %input.name type="text"  required="required" ng-model="name"
-        %lable -> your email -> %input.email type="email" required="required" ng-model="email"
-        %lable -> subject -> %input.subject type="text" required="required" ng-model="subject"
-        %lable -> what would you like to order -> %input.body type="text" required="required" size="300"  ng-model="body"
-        %input type="submit"
+        %input.name type="text"  required="required" ng-model="name"
+        %input.email type="text" required="required" ng-model="email"
+        %input.subject type="text" required="required" ng-model="subject"
+        %textarea.body type="text" required="required" size="300"  ng-model="body"
+        %input.submit type="submit"
 
         
     %img.purchase_art src="{{purchase_art}}" alt="{{alt}}"

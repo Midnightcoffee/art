@@ -289,3 +289,76 @@ footer .footer_text {
 .hidden {
   display: none;
 }
+
+/* line 232 */
+.email_box {
+  display: inline;
+  margin: auto;
+  text-align: center;
+}
+/* line 238 */
+.email_box .purchase_form .name {
+  width: 20%;
+  margin: 0.5em;
+  padding: 0.5em;
+  border: 0.5em solid #dadada;
+  border-color: #9ecaed;
+  border-radius: 3em;
+}
+/* line 245 */
+.email_box .purchase_form .email {
+  width: 20%;
+  margin: 0.5em;
+  padding: 0.5em;
+  border: 0.5em solid #dadada;
+  border-color: #9ecaed;
+  border-radius: 3em;
+}
+/* line 252 */
+.email_box .purchase_form .subject {
+  width: 20%;
+  margin: 0.5em;
+  padding: 0.5em;
+  border: 0.5em solid #dadada;
+  border-color: #9ecaed;
+  border-radius: 3em;
+}
+/* line 259 */
+.email_box .purchase_form .body {
+  display: block;
+  width: 65%;
+  height: 5em;
+  margin: 0 auto;
+  padding: 1em;
+  border: 0.5em solid #dadada;
+  border-color: #9ecaed;
+  border-radius: 3em;
+}
+/* line 269 */
+.email_box .purchase_form .submit {
+  margin: 0.5em;
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+/* line 286 */
+.email_box .purchase_form .submit:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}

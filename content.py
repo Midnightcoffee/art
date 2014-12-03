@@ -39,6 +39,7 @@ drew had the ability to study under many famous artists'''
 purchase_art = images + 'Flowers_1.jpg'
 purchase_table = {'small': '150', 'large': '200'}
 purchase_info="Prices vary by something something something..."
+email_form_heading="Send me an email with your order!"
 
 # tour page
 tour_art = images + 'Flowers_4.jpg'

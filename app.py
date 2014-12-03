@@ -114,6 +114,7 @@ def purchase():
             purchase_info=purchase_info,
             purchase_art=purchase_art,
             purchase_table=purchase_table,
+            email_form_heading=email_form_heading,
             )
 
 @app.route('/tour')
