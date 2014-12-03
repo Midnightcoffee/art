@@ -1,21 +1,28 @@
 Webapp for 3750
 ==================
-
-The idea was to extend my knowledge of such technologies as:
-
-* css and sass
-* html and haml
-* javascript
-* flask
-
-And such concepts as:
-
-* responsive design
-* web design
-* responsible design
-
 I have built websites before. But the design was always an after thought. Thus,
 designing the website was a new experience for me.
+
+Extra - Please read
+========================
+Where is the mobile.css and print.css? - I didn't make a mobile.css and print.css 
+because i thought it better to simply include the small changes i needed inside
+the master.css page like so...
+
+.logo
+  ... some styles  
+  @include responsive(small-screens) # checks to see if were 'mobile'
+    font-size: 2em
+    text-align: center
+  @media print # if were printing change the size of the font..
+    font-size: 1em
+
+Validation - some errors concerning external libraries that i couldn't resolve
+
+Styling and design
+==========================
+I wanted a darker theme to bring an elegance to my design.  Thats why i use
+mainly black and grey. I also wanted the site to be responsive, which i talk about below.
 
 Things I struggled with:
 

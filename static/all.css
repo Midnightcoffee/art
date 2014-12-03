@@ -110,7 +110,7 @@ header {
   }
 }
 
-/* line 97 */
+/* line 91 */
 #content {
   background-color: white;
   width: 97.91667%;
@@ -118,55 +118,55 @@ header {
   margin-left: 1.1%;
   margin-right: 1.1%;
 }
-/* line 104 */
+/* line 98 */
 #content #index_page {
   background-color: lightgrey;
 }
-/* line 106 */
+/* line 100 */
 #content #index_page figure {
   margin: 0px;
 }
-/* line 108 */
+/* line 102 */
 #content #index_page figure .cover_art {
   max-height: 10em;
   width: 100%;
 }
 @media only screen and (max-width: 360px) {
-  /* line 108 */
+  /* line 102 */
   #content #index_page figure .cover_art {
     height: 8.5em;
   }
 }
-/* line 114 */
+/* line 108 */
 #content #about_page {
   padding: 1em 0 0 0;
   background-color: lightgrey;
 }
-/* line 117 */
+/* line 111 */
 #content #about_page .picture_of_drew {
   margin: 0 auto;
   display: block;
   max-width: 30%;
 }
-/* line 123 */
+/* line 117 */
 #content #about_page .about_artist {
   width: 100%;
   overflow: auto;
   margin: 0 4em;
 }
 @media only screen and (max-width: 360px) {
-  /* line 123 */
+  /* line 117 */
   #content #about_page .about_artist {
     margin: 0 2em;
   }
 }
-/* line 130 */
+/* line 124 */
 #content #about_page .about_artist .column_1 {
   float: left;
   width: 30%;
 }
 @media only screen and (max-width: 360px) {
-  /* line 130 */
+  /* line 124 */
   #content #about_page .about_artist .column_1 {
     display: block;
     width: 100%;
@@ -174,17 +174,17 @@ header {
     word-wrap: break-word;
   }
 }
-/* line 138 */
+/* line 132 */
 #content #about_page .about_artist .column_1 .about_drew {
   text-align: center;
 }
-/* line 141 */
+/* line 135 */
 #content #about_page .about_artist .column_2 {
   float: left;
   width: 30%;
 }
 @media only screen and (max-width: 360px) {
-  /* line 141 */
+  /* line 135 */
   #content #about_page .about_artist .column_2 {
     background-color: white;
     display: block;
@@ -193,33 +193,33 @@ header {
     word-wrap: break-word;
   }
 }
-/* line 151 */
+/* line 145 */
 #content #about_page .about_artist .column_2 .artests_drew_studied_under {
   text-align: center;
 }
-/* line 153 */
+/* line 147 */
 #content #about_page .about_artist .column_2 .artests_drew_studied_under li {
   list-style: none;
 }
-/* line 155 */
+/* line 149 */
 #content #about_page .about_artist .column_2 .artests_drew_studied_under li a {
   text-decoration: none;
 }
 @media print {
-  /* line 157 */
+  /* line 151 */
   #content #about_page .about_artist .column_2 .artests_drew_studied_under li a:after {
     font-size: 10px;
     content: " (" attr(href) ") ";
   }
 }
-/* line 162 */
+/* line 156 */
 #content #about_page .about_artist .column_3 {
   float: left;
   width: 30%;
   margin: 0 1em;
 }
 @media only screen and (max-width: 360px) {
-  /* line 162 */
+  /* line 156 */
   #content #about_page .about_artist .column_3 {
     display: block;
     width: 100%;
@@ -227,42 +227,42 @@ header {
     word-wrap: break-word;
   }
 }
-/* line 172 */
+/* line 166 */
 #content #about_page .about_artist .column_3 .amazing_facts_about_drew lu {
   list-style: none;
 }
-/* line 174 */
+/* line 168 */
 #content #about_page .about_artist .column_3 .amazing_facts_about_drew lu a {
   text-decoration: none;
 }
-/* line 176 */
+/* line 170 */
 #content #about_page .about_artist .column_3 .drew_heading {
   text-align: center;
 }
-/* line 181 */
+/* line 175 */
 #content #about_page .about_art {
   max-height: 10em;
   width: 100%;
 }
-/* line 185 */
+/* line 179 */
 #content #review_page {
   background-color: lightgrey;
   word-wrap: break-word;
 }
-/* line 189 */
+/* line 183 */
 #content #review_page .reviews {
   width: 100%;
   overflow: auto;
   margin: 0 2em;
 }
-/* line 193 */
+/* line 187 */
 #content #review_page .reviews .column {
   float: left;
   width: 28%;
   padding: 1em;
 }
 @media only screen and (max-width: 360px) {
-  /* line 193 */
+  /* line 187 */
   #content #review_page .reviews .column {
     display: block;
     width: 100%;
@@ -270,22 +270,22 @@ header {
     word-wrap: break-word;
   }
 }
-/* line 203 */
+/* line 197 */
 #content #review_page .review_art {
   max-height: 10em;
   width: 100%;
 }
-/* line 213 */
+/* line 207 */
 #content #purchase_page .table_box {
   background-color: grey;
   color: white;
 }
-/* line 216 */
+/* line 210 */
 #content #purchase_page .table_box .purchase_table {
   margin: 1em auto;
   font-size: 1.5em;
 }
-/* line 220 */
+/* line 214 */
 #content #purchase_page .purchase_info {
   padding: 1em;
   max-width: 40%;
@@ -293,51 +293,51 @@ header {
   margin: 0 auto;
 }
 @media only screen and (max-width: 360px) {
-  /* line 220 */
+  /* line 214 */
   #content #purchase_page .purchase_info {
     max-width: 100%;
   }
 }
-/* line 228 */
+/* line 222 */
 #content #purchase_page .purhcase_email {
   margin: 1em auto;
 }
-/* line 230 */
+/* line 224 */
 #content #purchase_page .purchase_art {
   max-height: 10em;
   width: 100%;
 }
-/* line 235 */
+/* line 229 */
 #content #tour_page .tour_table {
   margin: 1em auto;
 }
-/* line 237 */
+/* line 231 */
 #content #tour_page .tour_info {
   padding: 1em;
   text-align: center;
 }
-/* line 241 */
+/* line 235 */
 #content #tour_page .tour_art {
   max-height: 10em;
   width: 100%;
 }
-/* line 246 */
+/* line 240 */
 #content #gallery .gallery_select {
   text-align: center;
   background-color: black;
   padding: 1em 0 0 0;
 }
-/* line 250 */
+/* line 244 */
 #content #gallery .gallery_select .radio_art {
   margin: 0.5em 5em;
 }
 @media only screen and (max-width: 360px) {
-  /* line 250 */
+  /* line 244 */
   #content #gallery .gallery_select .radio_art {
     margin: 0 10%;
   }
 }
-/* line 255 */
+/* line 249 */
 #content #gallery .gallery_select .submit_art {
   display: block;
   margin: 1em auto 0 auto;
@@ -346,11 +346,11 @@ header {
   width: 6em;
   height: 2em;
 }
-/* line 262 */
+/* line 256 */
 #content #gallery .gallery_select .gallery_options {
   color: white;
 }
-/* line 264 */
+/* line 258 */
 #content #gallery .gallery_select .gallery_options .gallery_option {
   display: inline;
   margin-left: 1em;
@@ -359,21 +359,21 @@ header {
   font-size: 2em;
 }
 @media only screen and (max-width: 360px) {
-  /* line 264 */
+  /* line 258 */
   #content #gallery .gallery_select .gallery_options .gallery_option {
     font-size: 1em;
   }
 }
-/* line 273 */
+/* line 267 */
 #content #gallery .slider {
   background-color: black;
   padding: 4em 2em;
 }
-/* line 276 */
+/* line 270 */
 #content #gallery .slider .art_pieces {
   margin: 1em 2em;
 }
-/* line 278 */
+/* line 272 */
 #content #gallery .slider .art_pieces .art_piece {
   border-style: ridge;
   margin: 0 auto;
@@ -381,7 +381,7 @@ header {
   display: block;
 }
 
-/* line 286 */
+/* line 280 */
 footer {
   margin-left: 1.1%;
   margin-right: 1.1%;
@@ -394,45 +394,45 @@ footer {
   border-top-width: 4px;
   font-weight: bold;
 }
-/* line 298 */
+/* line 292 */
 footer #fnav {
   padding: 1em;
   width: 97.91667%;
   text-align: center;
 }
 @media print {
-  /* line 298 */
+  /* line 292 */
   footer #fnav {
     display: none;
   }
 }
 @media only screen and (max-width: 360px) {
-  /* line 298 */
+  /* line 292 */
   footer #fnav {
     display: none;
   }
 }
-/* line 307 */
+/* line 301 */
 footer #fnav ul {
   margin: 0;
   padding: 0;
   height: auto;
 }
-/* line 311 */
+/* line 305 */
 footer #fnav ul li {
   padding: 1em 0;
   margin: 0;
   display: inline-block;
   margin-right: 2.65957%;
 }
-/* line 316 */
+/* line 310 */
 footer #fnav ul a {
   font-family: Arial, "Lucida Grande", Verdana, sans-serif;
   text-decoration: none;
   font-size: 1em;
   font-style: italic;
 }
-/* line 321 */
+/* line 315 */
 footer .footer_text {
   margin: 0 auto;
   display: block;
@@ -445,18 +445,18 @@ footer .footer_text {
   font-style: italic;
 }
 
-/* line 332 */
+/* line 326 */
 .hidden {
   display: none;
 }
 
-/* line 335 */
+/* line 329 */
 .email_box {
   display: inline;
   margin: auto;
   text-align: center;
 }
-/* line 341 */
+/* line 335 */
 .email_box .purchase_form .name {
   width: 20%;
   margin: 0.5em;
@@ -465,7 +465,7 @@ footer .footer_text {
   border-color: #9ecaed;
   border-radius: 3em;
 }
-/* line 348 */
+/* line 342 */
 .email_box .purchase_form .email {
   width: 20%;
   margin: 0.5em;
@@ -474,7 +474,7 @@ footer .footer_text {
   border-color: #9ecaed;
   border-radius: 3em;
 }
-/* line 355 */
+/* line 349 */
 .email_box .purchase_form .subject {
   width: 20%;
   margin: 0.5em;
@@ -483,7 +483,7 @@ footer .footer_text {
   border-color: #9ecaed;
   border-radius: 3em;
 }
-/* line 362 */
+/* line 356 */
 .email_box .purchase_form .body {
   display: block;
   width: 65%;
@@ -494,7 +494,7 @@ footer .footer_text {
   border-color: #9ecaed;
   border-radius: 3em;
 }
-/* line 372 */
+/* line 366 */
 .email_box .purchase_form .submit {
   margin: 0.5em;
   background: #3498db;
@@ -512,7 +512,7 @@ footer .footer_text {
   padding: 10px 20px 10px 20px;
   text-decoration: none;
 }
-/* line 389 */
+/* line 383 */
 .email_box .purchase_form .submit:hover {
   background: #3cb0fd;
   background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
