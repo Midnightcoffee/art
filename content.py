@@ -6,7 +6,7 @@ meta = {
         'viewport' : 'width=device-width, initial-scale=1.0, minimum-scale=1.0'
         }
 
-internal_urls = ['home', 'gallery', 'about','purchase', 'tour']
+internal_urls = ['home', 'gallery', 'about','purchase', 'tour', 'reviews']
 copy_right = "NY, New York City 88516, Rich ave P0 234. &copy; 2014 "
 logo = "DREW'S ART"
 
@@ -53,7 +53,11 @@ tour_art = images + 'Flowers_4.jpg'
 tour_info="Here are some dates and locations where you can come see how amazing I am"
 tour_table = {'Detroit': '4/7/2015', 'Croatia': '4/25/2015', 'Iceland': '5/20/2015'}
 
-# stick art
+#reviews page
+review_art = images + 'Abstract_4.jpg'
+review = "review" * 50
+text_reviews = [review] * 3
+
 
 #TODO better way, read file
 stick_art = [images + 'Stick_' + str(x) + '.jpg' for x in range(1,5)]

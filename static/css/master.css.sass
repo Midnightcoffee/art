@@ -83,14 +83,16 @@ header
         font-family: Arial, "Lucida Grande", Verdana, sans-serif
         font-size: 2em
         color: white
-        @media print
-          &:after
-          content: " (" attr(href) ") "
-
-      #purchase_link
-
+        &:after
+          @media print
+            content: " (" attr(href) ") "
         @include responsive(small-screens)
           font-size: 1em
+
+
+
+
+
 
 
 #content
@@ -127,7 +129,7 @@ header
         float: left
         width: 30%
         .about_drew
-          text-align:center
+          text-align: center
       .column_2
         float: left
         width: 30%
@@ -158,6 +160,31 @@ header
     .about_art
       max-height: 10em
       width: 100%
+
+  #review_page
+    background-color: lightgrey
+    word-wrap: break-word
+    // TODO combine these boxes
+    .reviews
+      width: 100%
+      overflow: auto
+      margin: 0 2em
+      .column
+        float: left
+        width: 28%
+        padding: 1em
+        @include responsive(small-screens)
+          display: block
+          width: 100%
+          max-width: 75%
+          word-wrap: break-word
+
+    .review_art
+      max-height: 10em
+      width: 100%
+              
+
+
 
 
       
@@ -261,8 +288,6 @@ footer
 
 .hidden
   display: none
-
-.purchase_email_info
 
 .email_box
   display: inline

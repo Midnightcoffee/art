@@ -1,0 +1,13 @@
+{% haml %}
+-extends "layout.html.haml"
+-block content:
+  #review_page
+    .reviews
+      -for review in text_reviews:
+        .column
+          %p.review << {{review}}
+
+    %img.review_art src="{{review_art}}" alt="{{alt}} : {{reveiw_art}}"
+      
+  
+{% endhaml %}

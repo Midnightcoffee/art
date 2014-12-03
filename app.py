@@ -106,6 +106,15 @@ def about():
             drew_facts=drew_facts,
             )
 
+@app.route('/reviews')
+def reviews():
+    return render_template('reviews.html.haml',
+            title="Review",
+            alt=alt,
+            review_art=review_art,
+            text_reviews=text_reviews
+            )
+
 
 @app.route('/purchase')
 def purchase():
