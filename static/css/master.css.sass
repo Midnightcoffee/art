@@ -125,14 +125,30 @@ header
       width: 100%
       overflow: auto
       margin: 0 4em
+      @include responsive(small-screens)
+        margin: 0 2em
+
       .column_1
         float: left
         width: 30%
+        @include responsive(small-screens)
+          display: block
+          width: 100%
+          max-width: 75%
+          word-wrap: break-word
         .about_drew
           text-align: center
+
       .column_2
         float: left
         width: 30%
+
+        @include responsive(small-screens)
+          background-color: white
+          display: block
+          width: 100%
+          max-width: 75%
+          word-wrap: break-word
         .artests_drew_studied_under
           text-align: center
           li
@@ -148,9 +164,13 @@ header
         float: left
         width: 30%
         margin: 0 1em
+        @include responsive(small-screens)
+          display: block
+          width: 100%
+          max-width: 75%
+          word-wrap: break-word
         .amazing_facts_about_drew
-          text-align: center
-          li
+          lu
             list-style: none
             a
               text-decoration: none
@@ -189,10 +209,17 @@ header
 
       
   #purchase_page
-    .purchase_table
-      margin: 1em auto
+    .table_box
+      background-color: grey
+      color: white
+      .purchase_table
+        margin: 1em auto
+
     .purchase_info
       padding: 1em
+      max-width: 40%
+      text-align: center
+      margin: 0 auto
     .purhcase_email
       margin: 1em auto
     .purchase_art
@@ -204,6 +231,7 @@ header
       margin: 1em auto
     .tour_info
       padding: 1em
+      text-align: center
     .tour_art
       max-height: 10em
       width: 100%

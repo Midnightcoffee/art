@@ -13,7 +13,7 @@
           $scope.name = "your name";
           $scope.email = "your email";
           $scope.subject = "your subject";
-          $scope.body = "enter your message here";
+          $scope.body = "enter your order here!";
           $scope.sendEmail = function() {
             window.location = "mailto:drew.verlee@gmail.com?subject=" 
             + $scope.subject + "&body=" + "Email: " + $scope.email + " -- name: " +
@@ -21,13 +21,16 @@
           };
         }]);
 
-    %img.art src="{{art}}" 
     %p.purchase_info << {{ purchase_info }}
-    %table.purchase_table
-      -for size, price in purchase_table.items():
+    .table_box
+      %table.purchase_table
         %tr
-          %td << {{size}}
-          %td << {{price}}
+          %th <<  {{purchase_table['thead'][0]}}
+          %th << {{purchase_table['thead'][1]}}
+        -for size, price in purchase_table['tbody'].items():
+          %tr
+            %td << {{size}}
+            %td << {{price}}
 
 
     .email_box
@@ -40,5 +43,5 @@
         %input.submit type="submit"
 
         
-    %img.purchase_art src="{{purchase_art}}" alt="{{alt}}"
+    %img.purchase_art src="{{purchase_art}}" alt="{{alt}} : {{purchase_art}}"
 {% endhaml %}

@@ -3,7 +3,7 @@
 -block content:
   #tour_page
     %img.art src="{{art}}"
-    %p.tour_info << {{ tour_info }}
+    %h2.tour_info << {{ tour_info }}
     %table.tour_table
       -for location, date in tour_table.items():
         %tr

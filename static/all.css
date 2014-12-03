@@ -152,81 +152,111 @@ header {
   overflow: auto;
   margin: 0 4em;
 }
-/* line 128 */
+@media only screen and (max-width: 360px) {
+  /* line 124 */
+  #content #about_page .about_artist {
+    margin: 0 2em;
+  }
+}
+/* line 131 */
 #content #about_page .about_artist .column_1 {
   float: left;
   width: 30%;
 }
-/* line 131 */
+@media only screen and (max-width: 360px) {
+  /* line 131 */
+  #content #about_page .about_artist .column_1 {
+    display: block;
+    width: 100%;
+    max-width: 75%;
+    word-wrap: break-word;
+  }
+}
+/* line 139 */
 #content #about_page .about_artist .column_1 .about_drew {
   text-align: center;
 }
-/* line 133 */
+/* line 142 */
 #content #about_page .about_artist .column_2 {
   float: left;
   width: 30%;
 }
-/* line 136 */
+@media only screen and (max-width: 360px) {
+  /* line 142 */
+  #content #about_page .about_artist .column_2 {
+    background-color: white;
+    display: block;
+    width: 100%;
+    max-width: 75%;
+    word-wrap: break-word;
+  }
+}
+/* line 152 */
 #content #about_page .about_artist .column_2 .artests_drew_studied_under {
   text-align: center;
 }
-/* line 138 */
+/* line 154 */
 #content #about_page .about_artist .column_2 .artests_drew_studied_under li {
   list-style: none;
 }
-/* line 140 */
+/* line 156 */
 #content #about_page .about_artist .column_2 .artests_drew_studied_under li a {
   text-decoration: none;
 }
 @media print {
-  /* line 142 */
+  /* line 158 */
   #content #about_page .about_artist .column_2 .artests_drew_studied_under li a:after {
     font-size: 10px;
     content: " (" attr(href) ") ";
   }
 }
-/* line 147 */
+/* line 163 */
 #content #about_page .about_artist .column_3 {
   float: left;
   width: 30%;
   margin: 0 1em;
 }
-/* line 151 */
-#content #about_page .about_artist .column_3 .amazing_facts_about_drew {
-  text-align: center;
+@media only screen and (max-width: 360px) {
+  /* line 163 */
+  #content #about_page .about_artist .column_3 {
+    display: block;
+    width: 100%;
+    max-width: 75%;
+    word-wrap: break-word;
+  }
 }
-/* line 153 */
-#content #about_page .about_artist .column_3 .amazing_facts_about_drew li {
+/* line 173 */
+#content #about_page .about_artist .column_3 .amazing_facts_about_drew lu {
   list-style: none;
 }
-/* line 155 */
-#content #about_page .about_artist .column_3 .amazing_facts_about_drew li a {
+/* line 175 */
+#content #about_page .about_artist .column_3 .amazing_facts_about_drew lu a {
   text-decoration: none;
 }
-/* line 160 */
+/* line 180 */
 #content #about_page .about_art {
   max-height: 10em;
   width: 100%;
 }
-/* line 164 */
+/* line 184 */
 #content #review_page {
   background-color: lightgrey;
   word-wrap: break-word;
 }
-/* line 168 */
+/* line 188 */
 #content #review_page .reviews {
   width: 100%;
   overflow: auto;
   margin: 0 2em;
 }
-/* line 172 */
+/* line 192 */
 #content #review_page .reviews .column {
   float: left;
   width: 28%;
   padding: 1em;
 }
 @media only screen and (max-width: 360px) {
-  /* line 172 */
+  /* line 192 */
   #content #review_page .reviews .column {
     display: block;
     width: 100%;
@@ -234,78 +264,87 @@ header {
     word-wrap: break-word;
   }
 }
-/* line 182 */
+/* line 202 */
 #content #review_page .review_art {
   max-height: 10em;
   width: 100%;
 }
-/* line 192 */
-#content #purchase_page .purchase_table {
+/* line 212 */
+#content #purchase_page .table_box {
+  background-color: grey;
+  color: white;
+}
+/* line 215 */
+#content #purchase_page .table_box .purchase_table {
   margin: 1em auto;
 }
-/* line 194 */
+/* line 218 */
 #content #purchase_page .purchase_info {
   padding: 1em;
+  max-width: 40%;
+  text-align: center;
+  margin: 0 auto;
 }
-/* line 196 */
+/* line 223 */
 #content #purchase_page .purhcase_email {
   margin: 1em auto;
 }
-/* line 198 */
+/* line 225 */
 #content #purchase_page .purchase_art {
   max-height: 10em;
   width: 100%;
 }
-/* line 203 */
+/* line 230 */
 #content #tour_page .tour_table {
   margin: 1em auto;
 }
-/* line 205 */
+/* line 232 */
 #content #tour_page .tour_info {
   padding: 1em;
+  text-align: center;
 }
-/* line 207 */
+/* line 235 */
 #content #tour_page .tour_art {
   max-height: 10em;
   width: 100%;
 }
-/* line 212 */
+/* line 240 */
 #content #gallery .gallery_select {
   text-align: center;
   background-color: black;
   padding: 1em 0 0 0;
 }
-/* line 217 */
+/* line 245 */
 #content #gallery .slider {
   background-color: black;
   padding: 4em 2em;
 }
-/* line 220 */
+/* line 248 */
 #content #gallery .slider .art_pieces {
   margin: 1em 2em;
 }
-/* line 222 */
+/* line 250 */
 #content #gallery .slider .art_pieces .art_piece {
   border-style: ridge;
   margin: 0 auto;
   width: 100%;
   display: block;
 }
-/* line 228 */
+/* line 256 */
 #content #gallery .gallery_select .radio_art {
   margin-left: 2em;
   margin-right: 2em;
 }
-/* line 232 */
+/* line 260 */
 #content #gallery .gallery_select .submit_art {
   display: block;
   margin: 1em auto 0 auto;
 }
-/* line 235 */
+/* line 263 */
 #content #gallery .gallery_select .gallery_options {
   color: white;
 }
-/* line 237 */
+/* line 265 */
 #content #gallery .gallery_select .gallery_options .gallery_option {
   display: inline;
   margin-left: 1em;
@@ -313,7 +352,7 @@ header {
   padding: 1em auto;
 }
 
-/* line 243 */
+/* line 271 */
 footer {
   margin-left: 1.1%;
   margin-right: 1.1%;
@@ -326,45 +365,45 @@ footer {
   border-top-style: double;
   border-top-width: 4px;
 }
-/* line 255 */
+/* line 283 */
 footer #fnav {
   padding: 1em auto;
   width: 97.91667%;
   text-align: center;
 }
 @media print {
-  /* line 255 */
+  /* line 283 */
   footer #fnav {
     display: none;
   }
 }
 @media only screen and (max-width: 360px) {
-  /* line 255 */
+  /* line 283 */
   footer #fnav {
     display: none;
   }
 }
-/* line 264 */
+/* line 292 */
 footer #fnav ul {
   margin: 0;
   padding: 0;
   height: auto;
 }
-/* line 268 */
+/* line 296 */
 footer #fnav ul li {
   padding: 1em 0;
   margin: 0;
   display: inline-block;
   margin-right: 2.65957%;
 }
-/* line 273 */
+/* line 301 */
 footer #fnav ul a {
   font-family: Arial, "Lucida Grande", Verdana, sans-serif;
   text-decoration: none;
   font-size: 1em;
   font-style: italic;
 }
-/* line 278 */
+/* line 306 */
 footer .footer_text {
   margin: 0 auto;
   display: block;
@@ -377,18 +416,18 @@ footer .footer_text {
   font-style: italic;
 }
 
-/* line 289 */
+/* line 317 */
 .hidden {
   display: none;
 }
 
-/* line 292 */
+/* line 320 */
 .email_box {
   display: inline;
   margin: auto;
   text-align: center;
 }
-/* line 298 */
+/* line 326 */
 .email_box .purchase_form .name {
   width: 20%;
   margin: 0.5em;
@@ -397,7 +436,7 @@ footer .footer_text {
   border-color: #9ecaed;
   border-radius: 3em;
 }
-/* line 305 */
+/* line 333 */
 .email_box .purchase_form .email {
   width: 20%;
   margin: 0.5em;
@@ -406,7 +445,7 @@ footer .footer_text {
   border-color: #9ecaed;
   border-radius: 3em;
 }
-/* line 312 */
+/* line 340 */
 .email_box .purchase_form .subject {
   width: 20%;
   margin: 0.5em;
@@ -415,7 +454,7 @@ footer .footer_text {
   border-color: #9ecaed;
   border-radius: 3em;
 }
-/* line 319 */
+/* line 347 */
 .email_box .purchase_form .body {
   display: block;
   width: 65%;
@@ -426,7 +465,7 @@ footer .footer_text {
   border-color: #9ecaed;
   border-radius: 3em;
 }
-/* line 329 */
+/* line 357 */
 .email_box .purchase_form .submit {
   margin: 0.5em;
   background: #3498db;
@@ -444,7 +483,7 @@ footer .footer_text {
   padding: 10px 20px 10px 20px;
   text-decoration: none;
 }
-/* line 346 */
+/* line 374 */
 .email_box .purchase_form .submit:hover {
   background: #3cb0fd;
   background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
