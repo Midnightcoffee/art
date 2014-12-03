@@ -104,6 +104,7 @@ def about():
             external_links=external_links,
             about_art=about_art,
             drew_facts=drew_facts,
+            drew_heading=drew_heading,
             )
 
 @app.route('/reviews')

@@ -176,6 +176,8 @@ header
             list-style: none
             a
               text-decoration: none
+        .drew_heading
+          text-align: center
           
               
 
@@ -222,6 +224,9 @@ header
       max-width: 40%
       text-align: center
       margin: 0 auto
+      @include responsive(small-screens)
+        max-width: 100%
+
     .purhcase_email
       margin: 1em auto
     .purchase_art
@@ -234,6 +239,7 @@ header
     .tour_info
       padding: 1em
       text-align: center
+
     .tour_art
       max-height: 10em
       width: 100%

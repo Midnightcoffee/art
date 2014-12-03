@@ -13,6 +13,7 @@
             -for artist, url in external_links.items():
               %li -> %a.artist_links href="{{url}}" -> {{artist}}
       .column_3
+        %h2.drew_facts_heading << {{ drew_heading }}
         .amazing_facts_about_drew
           %ul.fact_list
             -for fact in drew_facts:

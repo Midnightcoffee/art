@@ -31,6 +31,7 @@ email_hyper_link= 'drew.Verlee@gmail.com'
 #about
 picture_of_drew = images + 'drew.jpg'
 about_art = images + 'Stick_3.jpg'
+drew_heading = "Amazing facts about drew"
 about_drew='''Artistic mastermind drew Verlee was born in Michigan. Raised and
 taught by wolves. His style has been hailed as revolutionary. A renowned time traveler
 drew had the ability to study under many famous artists.'''
