@@ -34,7 +34,7 @@ app.config([
 ]).controller("EmailController", [
   "$scope", function($scope) {
     $scope.name = "your name";
-    $scope.email = "your email";
+    $scope.email = "youremail@something.com";
     $scope.subject = "your subject";
     $scope.body = "enter your order here!";
     return $scope.sendEmail = function() {

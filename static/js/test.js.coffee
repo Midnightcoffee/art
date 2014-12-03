@@ -22,7 +22,7 @@ app.config([
   "$scope"
   ($scope) ->
     $scope.name = "your name"
-    $scope.email = "your email"
+    $scope.email = "youremail@something.com"
     $scope.subject = "your subject"
     $scope.body = "enter your order here!"
     $scope.sendEmail = ->

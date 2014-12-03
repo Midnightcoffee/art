@@ -19,7 +19,7 @@
       %h2.email_heading << {{ email_form_heading }}
       %form.purchase_form ng-controller="EmailController" ng-submit="sendEmail()"
         %input.name type="text"  required="required" ng-model="name"
-        %input.email type="text" required="required" ng-model="email"
+        %input.email type="email" required="required" ng-model="email"
         %input.subject type="text" required="required" ng-model="subject"
         %textarea.body type="text" required="required" size="300"  ng-model="body"
         %input.submit type="submit"
